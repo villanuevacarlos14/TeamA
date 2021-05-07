@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/AppKeep.Web.csproj",
+  "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/AppKeep.Web.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -12,7 +12,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 67614189,
+        "HashCode": 1498740347,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Components.FluentValidationValidator",
         "AssemblyName": "AppKeep.Web",
@@ -38,7 +38,7 @@
         }
       },
       {
-        "HashCode": 1645626271,
+        "HashCode": -386930921,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Components.FluentValidationValidator",
         "AssemblyName": "AppKeep.Web",
@@ -65,7 +65,7 @@
         }
       },
       {
-        "HashCode": -354243860,
+        "HashCode": 319164988,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.Authentication.Login",
         "AssemblyName": "AppKeep.Web",
@@ -81,7 +81,7 @@
         }
       },
       {
-        "HashCode": -947560778,
+        "HashCode": -277569525,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.Authentication.Login",
         "AssemblyName": "AppKeep.Web",
@@ -98,78 +98,468 @@
         }
       },
       {
-        "HashCode": 1541964203,
+        "HashCode": -195053427,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.Search.SearchComponent",
+        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SearchComponent"
+            "TagName": "UserMachinePage"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "SearchValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Name": "UserMachineId",
+            "TypeName": "System.Int32",
             "Metadata": {
-              "Common.PropertyName": "SearchValueChanged",
-              "Components.EventCallback": "True"
+              "Common.PropertyName": "UserMachineId"
             }
           },
           {
             "Kind": "Components.Component",
-            "Name": "IsCompact",
-            "TypeName": "System.Boolean",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "IsCompact"
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.Search.SearchComponent"
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage"
         }
       },
       {
-        "HashCode": 614064426,
+        "HashCode": 1630880397,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.Search.SearchComponent",
+        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AppKeep.Web.Pages.Search.SearchComponent"
+            "TagName": "AppKeep.Web.Pages.MyMachines.UserMachinePage"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "SearchValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Name": "UserMachineId",
+            "TypeName": "System.Int32",
             "Metadata": {
-              "Common.PropertyName": "SearchValueChanged",
-              "Components.EventCallback": "True"
+              "Common.PropertyName": "UserMachineId"
             }
           },
           {
             "Kind": "Components.Component",
-            "Name": "IsCompact",
-            "TypeName": "System.Boolean",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "IsCompact"
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.Search.SearchComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -614119563,
+        "HashCode": 1636670581,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "UserMachinePage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 514708822,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "AppKeep.Web.Pages.MyMachines.UserMachinePage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 138807997,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MyMachinesPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage"
+        }
+      },
+      {
+        "HashCode": 948140096,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2003276425,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MyMachinesPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -1648548347,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "AppKeep.Web.Pages.MyMachines.MyMachinesPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1955576513,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MachineProfileComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MachineItem",
+            "TypeName": "AppKeep.Domain.UserMachine",
+            "Metadata": {
+              "Common.PropertyName": "MachineItem"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "UserMachineId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "UserMachineId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsEditMode",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "IsEditMode"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsReadOnly",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "IsReadOnly"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent"
+        }
+      },
+      {
+        "HashCode": 2022449692,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MachineItem",
+            "TypeName": "AppKeep.Domain.UserMachine",
+            "Metadata": {
+              "Common.PropertyName": "MachineItem"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "UserMachineId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "UserMachineId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsEditMode",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "IsEditMode"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsReadOnly",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "IsReadOnly"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 145498268,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.MyMachines.MachineTileComponent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MachineTileComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UserMachine",
+            "TypeName": "AppKeep.Domain.UserMachine",
+            "Metadata": {
+              "Common.PropertyName": "UserMachine"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineTileComponent"
+        }
+      },
+      {
+        "HashCode": 394933743,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.MyMachines.MachineTileComponent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.MyMachines.MachineTileComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UserMachine",
+            "TypeName": "AppKeep.Domain.UserMachine",
+            "Metadata": {
+              "Common.PropertyName": "UserMachine"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineTileComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 878662010,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.Index",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1877701029,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.Index",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1678738512,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.SetupMachine.NewMachineButton",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NewMachineButton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.NewMachineButton"
+        }
+      },
+      {
+        "HashCode": -1305225431,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.SetupMachine.NewMachineButton",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.SetupMachine.NewMachineButton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.NewMachineButton",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -362187667,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SetupNewMachinePage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage"
+        }
+      },
+      {
+        "HashCode": -1829991668,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1910752225,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.Search.SearchPage",
         "AssemblyName": "AppKeep.Web",
@@ -205,7 +595,7 @@
         }
       },
       {
-        "HashCode": 1643690952,
+        "HashCode": -1993173317,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.Search.SearchPage",
         "AssemblyName": "AppKeep.Web",
@@ -242,7 +632,7 @@
         }
       },
       {
-        "HashCode": 1632609881,
+        "HashCode": -900634530,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Pages.Search.SearchPage.Body",
         "AssemblyName": "AppKeep.Web",
@@ -261,7 +651,7 @@
         }
       },
       {
-        "HashCode": 203111716,
+        "HashCode": -848917345,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Pages.Search.SearchPage.Body",
         "AssemblyName": "AppKeep.Web",
@@ -281,7 +671,78 @@
         }
       },
       {
-        "HashCode": 2040809216,
+        "HashCode": -862276180,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.Search.SearchComponent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SearchComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "SearchValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "SearchValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsCompact",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "IsCompact"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.Search.SearchComponent"
+        }
+      },
+      {
+        "HashCode": -1795641287,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.Search.SearchComponent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.Search.SearchComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "SearchValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "SearchValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsCompact",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "IsCompact"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.Search.SearchComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1819128028,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.Search.SearchListComponent",
         "AssemblyName": "AppKeep.Web",
@@ -307,7 +768,7 @@
         }
       },
       {
-        "HashCode": 815043782,
+        "HashCode": -1269444911,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.Search.SearchListComponent",
         "AssemblyName": "AppKeep.Web",
@@ -334,73 +795,7 @@
         }
       },
       {
-        "HashCode": 996434342,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.SetupMachine.NewMachineButton",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NewMachineButton"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.NewMachineButton"
-        }
-      },
-      {
-        "HashCode": -2016526390,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.SetupMachine.NewMachineButton",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.SetupMachine.NewMachineButton"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.NewMachineButton",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2106384568,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SetupNewMachinePage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage"
-        }
-      },
-      {
-        "HashCode": -1774774762,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.SetupMachine.SetupNewMachinePage",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -863676591,
+        "HashCode": 1234451899,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.UpkeepTemplate.UpkeepProfileComponent",
         "AssemblyName": "AppKeep.Web",
@@ -443,7 +838,7 @@
         }
       },
       {
-        "HashCode": 590590095,
+        "HashCode": -1278941779,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.UpkeepTemplate.UpkeepProfileComponent",
         "AssemblyName": "AppKeep.Web",
@@ -487,7 +882,62 @@
         }
       },
       {
-        "HashCode": 1206415167,
+        "HashCode": 1478266979,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WorkItemStatus"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WorkStatus",
+            "TypeName": "AppKeep.Data.WorkStatusEnum",
+            "IsEnum": true,
+            "Metadata": {
+              "Common.PropertyName": "WorkStatus"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus"
+        }
+      },
+      {
+        "HashCode": -328382101,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WorkStatus",
+            "TypeName": "AppKeep.Data.WorkStatusEnum",
+            "IsEnum": true,
+            "Metadata": {
+              "Common.PropertyName": "WorkStatus"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1942608100,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.UpkeepTemplate.TemplateDetail",
         "AssemblyName": "AppKeep.Web",
@@ -565,7 +1015,7 @@
         }
       },
       {
-        "HashCode": 1938100664,
+        "HashCode": -1178688196,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.UpkeepTemplate.TemplateDetail",
         "AssemblyName": "AppKeep.Web",
@@ -644,7 +1094,7 @@
         }
       },
       {
-        "HashCode": -2063293384,
+        "HashCode": -2111600787,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Pages.UpkeepTemplate.TemplateDetail.Body",
         "AssemblyName": "AppKeep.Web",
@@ -663,7 +1113,7 @@
         }
       },
       {
-        "HashCode": -758200532,
+        "HashCode": -1419727739,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Pages.UpkeepTemplate.TemplateDetail.Body",
         "AssemblyName": "AppKeep.Web",
@@ -683,95 +1133,73 @@
         }
       },
       {
-        "HashCode": 218061136,
+        "HashCode": 1251303667,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus",
+        "Name": "AppKeep.Web.Pages.FetchData",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WorkItemStatus"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WorkStatus",
-            "TypeName": "AppKeep.Data.WorkStatusEnum",
-            "IsEnum": true,
-            "Metadata": {
-              "Common.PropertyName": "WorkStatus"
-            }
+            "TagName": "FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus"
+          "Common.TypeName": "AppKeep.Web.Pages.FetchData"
         }
       },
       {
-        "HashCode": 516963690,
+        "HashCode": -685132882,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus",
+        "Name": "AppKeep.Web.Pages.FetchData",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WorkStatus",
-            "TypeName": "AppKeep.Data.WorkStatusEnum",
-            "IsEnum": true,
-            "Metadata": {
-              "Common.PropertyName": "WorkStatus"
-            }
+            "TagName": "AppKeep.Web.Pages.FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.UpkeepTemplate.WorkItemStatus",
+          "Common.TypeName": "AppKeep.Web.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -2043705979,
+        "HashCode": -1160585693,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.Index",
+        "Name": "AppKeep.Web.Pages.Counter",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.Index"
+          "Common.TypeName": "AppKeep.Web.Pages.Counter"
         }
       },
       {
-        "HashCode": -1860869251,
+        "HashCode": 188738170,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.Index",
+        "Name": "AppKeep.Web.Pages.Counter",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AppKeep.Web.Pages.Index"
+            "TagName": "AppKeep.Web.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.Index",
+          "Common.TypeName": "AppKeep.Web.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 762206868,
+        "HashCode": -1803293136,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.MyPlans.MyPlansPage",
         "AssemblyName": "AppKeep.Web",
@@ -799,7 +1227,7 @@
         }
       },
       {
-        "HashCode": -1152017218,
+        "HashCode": -2127559649,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Pages.MyPlans.MyPlansPage",
         "AssemblyName": "AppKeep.Web",
@@ -828,7 +1256,7 @@
         }
       },
       {
-        "HashCode": 1267738145,
+        "HashCode": 765349509,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Pages.MyPlans.MyPlansPage.Body",
         "AssemblyName": "AppKeep.Web",
@@ -847,7 +1275,7 @@
         }
       },
       {
-        "HashCode": 992485473,
+        "HashCode": -1445236335,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Pages.MyPlans.MyPlansPage.Body",
         "AssemblyName": "AppKeep.Web",
@@ -867,148 +1295,14 @@
         }
       },
       {
-        "HashCode": 107644452,
+        "HashCode": -186064867,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.FetchData",
+        "Name": "AppKeep.Web.Shared.LoginLayout",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1663302080,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.FetchData",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -67727249,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MachineProfileComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "MachineItem",
-            "TypeName": "AppKeep.Domain.UserMachine",
-            "Metadata": {
-              "Common.PropertyName": "MachineItem"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "UserMachineId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "UserMachineId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "IsEditMode",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "IsEditMode"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "IsReadOnly",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "IsReadOnly"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent"
-        }
-      },
-      {
-        "HashCode": -1124676305,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "MachineItem",
-            "TypeName": "AppKeep.Domain.UserMachine",
-            "Metadata": {
-              "Common.PropertyName": "MachineItem"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "UserMachineId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "UserMachineId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "IsEditMode",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "IsEditMode"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "IsReadOnly",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "IsReadOnly"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineProfileComponent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 659003311,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MyMachinesPage"
+            "TagName": "LoginLayout"
           }
         ],
         "BoundAttributes": [
@@ -1025,18 +1319,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage"
+          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout"
         }
       },
       {
-        "HashCode": -1731727255,
+        "HashCode": -1033336211,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage",
+        "Name": "AppKeep.Web.Shared.LoginLayout",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage"
+            "TagName": "AppKeep.Web.Shared.LoginLayout"
           }
         ],
         "BoundAttributes": [
@@ -1053,390 +1347,203 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage",
+          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 2028962133,
+        "HashCode": -541356974,
         "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+        "Name": "AppKeep.Web.Shared.LoginLayout.Body",
         "AssemblyName": "AppKeep.Web",
         "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "MyMachinesPage"
+            "ParentTag": "LoginLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": 722328793,
+        "HashCode": -966000546,
         "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+        "Name": "AppKeep.Web.Shared.LoginLayout.Body",
         "AssemblyName": "AppKeep.Web",
         "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "AppKeep.Web.Pages.MyMachines.MyMachinesPage"
+            "ParentTag": "AppKeep.Web.Shared.LoginLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MyMachinesPage.Body",
+          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 436886402,
+        "HashCode": 2076386626,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage",
+        "Name": "AppKeep.Web.Shared.SurveyPrompt",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "UserMachinePage"
+            "TagName": "SurveyPrompt"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "UserMachineId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "UserMachineId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage"
-        }
-      },
-      {
-        "HashCode": 797645314,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.MyMachines.UserMachinePage"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "UserMachineId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "UserMachineId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 899974024,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "UserMachinePage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1585082112,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "AppKeep.Web.Pages.MyMachines.UserMachinePage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.UserMachinePage.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1744912385,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.MachineTileComponent",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MachineTileComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "UserMachine",
-            "TypeName": "AppKeep.Domain.UserMachine",
-            "Metadata": {
-              "Common.PropertyName": "UserMachine"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineTileComponent"
-        }
-      },
-      {
-        "HashCode": 1565067341,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.MyMachines.MachineTileComponent",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.MyMachines.MachineTileComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "UserMachine",
-            "TypeName": "AppKeep.Domain.UserMachine",
-            "Metadata": {
-              "Common.PropertyName": "UserMachine"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.MyMachines.MachineTileComponent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 98628639,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.Counter",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 743690515,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Pages.Counter",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 59431585,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.App",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.App"
-        }
-      },
-      {
-        "HashCode": 1853108817,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.App",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -492486483,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.TabControl.TabPage",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TabPage"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Text",
+            "Name": "Title",
             "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "Text"
+              "Common.PropertyName": "Title"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage"
+          "Common.TypeName": "AppKeep.Web.Shared.SurveyPrompt"
         }
       },
       {
-        "HashCode": -858753908,
+        "HashCode": 1978163218,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.TabControl.TabPage",
+        "Name": "AppKeep.Web.Shared.SurveyPrompt",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AppKeep.Web.Shared.TabControl.TabPage"
+            "TagName": "AppKeep.Web.Shared.SurveyPrompt"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Text",
+            "Name": "Title",
             "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "Text"
+              "Common.PropertyName": "Title"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage",
+          "Common.TypeName": "AppKeep.Web.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1408353072,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
+        "HashCode": 843848853,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.NavMenu",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ChildContent",
-            "ParentTag": "TabPage"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
-          "Components.IsSpecialKind": "Components.ChildContent"
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.NavMenu"
         }
       },
       {
-        "HashCode": 1025492703,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
+        "HashCode": 1086715417,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.NavMenu",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ChildContent",
-            "ParentTag": "AppKeep.Web.Shared.TabControl.TabPage"
+            "TagName": "AppKeep.Web.Shared.NavMenu"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
-          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -2059453998,
+        "HashCode": 2133571324,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.UserAuthentication",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UserAuthentication"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.UserAuthentication"
+        }
+      },
+      {
+        "HashCode": 1599426310,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.UserAuthentication",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Shared.UserAuthentication"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.UserAuthentication",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -554725901,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.Component",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Component"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.Component"
+        }
+      },
+      {
+        "HashCode": -2035488645,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.Component",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Shared.Component"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.Component",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1619683593,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Shared.TabControl.TabControl",
         "AssemblyName": "AppKeep.Web",
@@ -1472,7 +1579,7 @@
         }
       },
       {
-        "HashCode": 821383150,
+        "HashCode": 1323360223,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Shared.TabControl.TabControl",
         "AssemblyName": "AppKeep.Web",
@@ -1509,7 +1616,7 @@
         }
       },
       {
-        "HashCode": 1692747056,
+        "HashCode": 1384321838,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Shared.TabControl.TabControl.ChildContent",
         "AssemblyName": "AppKeep.Web",
@@ -1527,7 +1634,7 @@
         }
       },
       {
-        "HashCode": 86646770,
+        "HashCode": 521227332,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Shared.TabControl.TabControl.ChildContent",
         "AssemblyName": "AppKeep.Web",
@@ -1546,381 +1653,115 @@
         }
       },
       {
-        "HashCode": 637803625,
+        "HashCode": -1553541884,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.PageBase",
+        "Name": "AppKeep.Web.Shared.TabControl.TabPage",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "PageBase"
+            "TagName": "TabPage"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Body",
+            "Name": "ChildContent",
             "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "Body",
+              "Common.PropertyName": "ChildContent",
               "Components.ChildContent": "True"
             }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.PageBase"
-        }
-      },
-      {
-        "HashCode": -1726081534,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.PageBase",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.PageBase"
-          }
-        ],
-        "BoundAttributes": [
+          },
           {
             "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.PageBase",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1129712092,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.PageBase.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "PageBase"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.PageBase.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -939352167,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.PageBase.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "AppKeep.Web.Shared.PageBase"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.PageBase.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1098197023,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.LoginLayout",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LoginLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout"
-        }
-      },
-      {
-        "HashCode": -1993741729,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.LoginLayout",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.LoginLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1761369762,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.LoginLayout.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "LoginLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 525174440,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.LoginLayout.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "AppKeep.Web.Shared.LoginLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.LoginLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -59928128,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.MainLayout",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": 180135662,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.MainLayout",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 17617334,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.MainLayout.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -665995585,
-        "Kind": "Components.ChildContent",
-        "Name": "AppKeep.Web.Shared.MainLayout.Body",
-        "AssemblyName": "AppKeep.Web",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "AppKeep.Web.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "AppKeep.Web.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2137141276,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.RedirectToLogin",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RedirectToLogin"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.RedirectToLogin"
-        }
-      },
-      {
-        "HashCode": 613835926,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.RedirectToLogin",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.RedirectToLogin"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.RedirectToLogin",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1540564717,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.SurveyPrompt",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
+            "Name": "Text",
             "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "Text"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.SurveyPrompt"
+          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage"
         }
       },
       {
-        "HashCode": -807877276,
+        "HashCode": -310166772,
         "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.SurveyPrompt",
+        "Name": "AppKeep.Web.Shared.TabControl.TabPage",
         "AssemblyName": "AppKeep.Web",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AppKeep.Web.Shared.SurveyPrompt"
+            "TagName": "AppKeep.Web.Shared.TabControl.TabPage"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
             "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "Text"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.SurveyPrompt",
+          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -674786578,
+        "HashCode": -181735946,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "TabPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 748990547,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "AppKeep.Web.Shared.TabControl.TabPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Shared.TabControl.TabPage.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2133128351,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Shared.LoginControl",
         "AssemblyName": "AppKeep.Web",
@@ -1948,7 +1789,7 @@
         }
       },
       {
-        "HashCode": -568783428,
+        "HashCode": 1944805460,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Shared.LoginControl",
         "AssemblyName": "AppKeep.Web",
@@ -1977,7 +1818,7 @@
         }
       },
       {
-        "HashCode": -1664198957,
+        "HashCode": 330605947,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Shared.LoginControl.Body",
         "AssemblyName": "AppKeep.Web",
@@ -1996,7 +1837,7 @@
         }
       },
       {
-        "HashCode": -1624354350,
+        "HashCode": -259783254,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Shared.LoginControl.Body",
         "AssemblyName": "AppKeep.Web",
@@ -2016,106 +1857,7 @@
         }
       },
       {
-        "HashCode": 1118864512,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.Component",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Component"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.Component"
-        }
-      },
-      {
-        "HashCode": -1795290682,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.Component",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.Component"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.Component",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1277208647,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.UserAuthentication",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "UserAuthentication"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.UserAuthentication"
-        }
-      },
-      {
-        "HashCode": 1907633208,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.UserAuthentication",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.UserAuthentication"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.UserAuthentication",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -427270808,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.NavMenu",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -943373514,
-        "Kind": "Components.Component",
-        "Name": "AppKeep.Web.Shared.NavMenu",
-        "AssemblyName": "AppKeep.Web",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AppKeep.Web.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AppKeep.Web.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 124265147,
+        "HashCode": -468008514,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Shared.NavTop",
         "AssemblyName": "AppKeep.Web",
@@ -2143,7 +1885,7 @@
         }
       },
       {
-        "HashCode": -1909380737,
+        "HashCode": -984644794,
         "Kind": "Components.Component",
         "Name": "AppKeep.Web.Shared.NavTop",
         "AssemblyName": "AppKeep.Web",
@@ -2172,7 +1914,7 @@
         }
       },
       {
-        "HashCode": 127177608,
+        "HashCode": -1390349486,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Shared.NavTop.Body",
         "AssemblyName": "AppKeep.Web",
@@ -2191,7 +1933,7 @@
         }
       },
       {
-        "HashCode": -65054822,
+        "HashCode": 309986367,
         "Kind": "Components.ChildContent",
         "Name": "AppKeep.Web.Shared.NavTop.Body",
         "AssemblyName": "AppKeep.Web",
@@ -2211,7 +1953,265 @@
         }
       },
       {
-        "HashCode": -1021582657,
+        "HashCode": 1734231708,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.MainLayout",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": -2107837162,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.MainLayout",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 244048867,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Shared.MainLayout.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -684574453,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Shared.MainLayout.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "AppKeep.Web.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -25896575,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.RedirectToLogin",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RedirectToLogin"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.RedirectToLogin"
+        }
+      },
+      {
+        "HashCode": -428444663,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.RedirectToLogin",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Shared.RedirectToLogin"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.RedirectToLogin",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1186153212,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.PageBase",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PageBase"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.PageBase"
+        }
+      },
+      {
+        "HashCode": -910530153,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.Shared.PageBase",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.Shared.PageBase"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.Shared.PageBase",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -156557017,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Shared.PageBase.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "PageBase"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Shared.PageBase.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -1921214320,
+        "Kind": "Components.ChildContent",
+        "Name": "AppKeep.Web.Shared.PageBase.Body",
+        "AssemblyName": "AppKeep.Web",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "AppKeep.Web.Shared.PageBase"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "AppKeep.Web.Shared.PageBase.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1767260594,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.App",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.App"
+        }
+      },
+      {
+        "HashCode": 1349862654,
+        "Kind": "Components.Component",
+        "Name": "AppKeep.Web.App",
+        "AssemblyName": "AppKeep.Web",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppKeep.Web.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AppKeep.Web.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1091028690,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2278,7 +2278,7 @@
         }
       },
       {
-        "HashCode": 932423024,
+        "HashCode": -1754046314,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2346,7 +2346,7 @@
         }
       },
       {
-        "HashCode": 877785213,
+        "HashCode": -1161434938,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2365,7 +2365,7 @@
         }
       },
       {
-        "HashCode": 2024593625,
+        "HashCode": 513597201,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2385,7 +2385,7 @@
         }
       },
       {
-        "HashCode": 161492307,
+        "HashCode": -554242911,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2416,7 +2416,7 @@
         }
       },
       {
-        "HashCode": -827952434,
+        "HashCode": 355207768,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2448,7 +2448,7 @@
         }
       },
       {
-        "HashCode": -1517202570,
+        "HashCode": 814234723,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2544,7 +2544,7 @@
         }
       },
       {
-        "HashCode": -709570040,
+        "HashCode": 934220924,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2641,7 +2641,7 @@
         }
       },
       {
-        "HashCode": 1996637549,
+        "HashCode": -1626961181,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2672,7 +2672,7 @@
         }
       },
       {
-        "HashCode": -466740528,
+        "HashCode": -318570145,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2704,7 +2704,7 @@
         }
       },
       {
-        "HashCode": -280513494,
+        "HashCode": -1705179084,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2723,7 +2723,7 @@
         }
       },
       {
-        "HashCode": -50310582,
+        "HashCode": 340902021,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2743,7 +2743,7 @@
         }
       },
       {
-        "HashCode": 619985535,
+        "HashCode": -1287496288,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2774,7 +2774,7 @@
         }
       },
       {
-        "HashCode": -116972893,
+        "HashCode": 1842409176,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2806,7 +2806,7 @@
         }
       },
       {
-        "HashCode": -2142716319,
+        "HashCode": -963232451,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2837,7 +2837,7 @@
         }
       },
       {
-        "HashCode": 1900497451,
+        "HashCode": 1298641152,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2869,7 +2869,7 @@
         }
       },
       {
-        "HashCode": -1683589280,
+        "HashCode": -1124861049,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2897,7 +2897,7 @@
         }
       },
       {
-        "HashCode": -686783843,
+        "HashCode": -127616799,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2926,7 +2926,7 @@
         }
       },
       {
-        "HashCode": 1974845410,
+        "HashCode": 748501876,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2945,7 +2945,7 @@
         }
       },
       {
-        "HashCode": 198792437,
+        "HashCode": -1994871662,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2965,7 +2965,7 @@
         }
       },
       {
-        "HashCode": -1088242289,
+        "HashCode": -173155670,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2984,7 +2984,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.CascadingValue<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -3033,7 +3034,7 @@
         }
       },
       {
-        "HashCode": 860488675,
+        "HashCode": -1344711576,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3052,7 +3053,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.CascadingValue<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -3102,7 +3104,7 @@
         }
       },
       {
-        "HashCode": 1486394293,
+        "HashCode": -35271158,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3121,7 +3123,7 @@
         }
       },
       {
-        "HashCode": 776971714,
+        "HashCode": 1719854044,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3141,7 +3143,7 @@
         }
       },
       {
-        "HashCode": -579141774,
+        "HashCode": 1558447574,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3179,7 +3181,7 @@
         }
       },
       {
-        "HashCode": 597408276,
+        "HashCode": 1667277025,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3218,7 +3220,7 @@
         }
       },
       {
-        "HashCode": 26274964,
+        "HashCode": -914564881,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3237,7 +3239,7 @@
         }
       },
       {
-        "HashCode": 1695516759,
+        "HashCode": 1306841505,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3257,7 +3259,7 @@
         }
       },
       {
-        "HashCode": -422385006,
+        "HashCode": -657857079,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3294,7 +3296,7 @@
         }
       },
       {
-        "HashCode": 442258056,
+        "HashCode": 1950746433,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3332,7 +3334,7 @@
         }
       },
       {
-        "HashCode": -1077558164,
+        "HashCode": 1108011832,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3399,7 +3401,7 @@
         }
       },
       {
-        "HashCode": 1473762905,
+        "HashCode": 2140005334,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3467,7 +3469,7 @@
         }
       },
       {
-        "HashCode": -226741895,
+        "HashCode": 1387439006,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3498,7 +3500,7 @@
         }
       },
       {
-        "HashCode": -845995650,
+        "HashCode": -1051424663,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3530,7 +3532,7 @@
         }
       },
       {
-        "HashCode": -1882556398,
+        "HashCode": 1003405967,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3549,7 +3551,7 @@
         }
       },
       {
-        "HashCode": -1787381022,
+        "HashCode": -844476251,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3569,7 +3571,7 @@
         }
       },
       {
-        "HashCode": 491113856,
+        "HashCode": -2052074691,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -3586,7 +3588,7 @@
         }
       },
       {
-        "HashCode": -1630088230,
+        "HashCode": 73096226,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -3604,7 +3606,7 @@
         }
       },
       {
-        "HashCode": 1816901346,
+        "HashCode": 1514029561,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3700,7 +3702,7 @@
         }
       },
       {
-        "HashCode": 655686305,
+        "HashCode": 637637950,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3797,7 +3799,7 @@
         }
       },
       {
-        "HashCode": -1824271145,
+        "HashCode": 1874686103,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3828,7 +3830,7 @@
         }
       },
       {
-        "HashCode": 239532671,
+        "HashCode": -983623926,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3860,7 +3862,7 @@
         }
       },
       {
-        "HashCode": 998929282,
+        "HashCode": -1667306238,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3916,7 +3918,7 @@
         }
       },
       {
-        "HashCode": 466057001,
+        "HashCode": 1300571054,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3973,7 +3975,7 @@
         }
       },
       {
-        "HashCode": -814891779,
+        "HashCode": -561905909,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3992,7 +3994,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.InputDate<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4052,7 +4055,7 @@
         }
       },
       {
-        "HashCode": -617748140,
+        "HashCode": -2115215361,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4071,7 +4074,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.InputDate<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4132,7 +4136,7 @@
         }
       },
       {
-        "HashCode": -1710350317,
+        "HashCode": 516361195,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4151,7 +4155,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.InputNumber<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4211,7 +4216,7 @@
         }
       },
       {
-        "HashCode": 2045543538,
+        "HashCode": -197132011,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4230,7 +4235,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.InputNumber<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4291,7 +4297,7 @@
         }
       },
       {
-        "HashCode": -1260950144,
+        "HashCode": -1398285736,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4310,7 +4316,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.InputSelect<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4371,7 +4378,7 @@
         }
       },
       {
-        "HashCode": -478904541,
+        "HashCode": 144808767,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4390,7 +4397,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.InputSelect<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4452,7 +4460,7 @@
         }
       },
       {
-        "HashCode": -960346322,
+        "HashCode": 792233324,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4471,7 +4479,7 @@
         }
       },
       {
-        "HashCode": 1384089842,
+        "HashCode": -1018782829,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4491,7 +4499,7 @@
         }
       },
       {
-        "HashCode": -60580888,
+        "HashCode": 1773711783,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4547,7 +4555,7 @@
         }
       },
       {
-        "HashCode": -559835856,
+        "HashCode": 92726922,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4604,7 +4612,7 @@
         }
       },
       {
-        "HashCode": -448980687,
+        "HashCode": -987074322,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4660,7 +4668,7 @@
         }
       },
       {
-        "HashCode": 630985097,
+        "HashCode": 1568378569,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4717,7 +4725,7 @@
         }
       },
       {
-        "HashCode": -125304535,
+        "HashCode": 516013982,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4736,7 +4744,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4766,7 +4775,7 @@
         }
       },
       {
-        "HashCode": -214764182,
+        "HashCode": 1666505210,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4785,7 +4794,8 @@
             "Documentation": "Specifies the type of the type parameter TValue for the Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue> component.",
             "Metadata": {
               "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True"
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
             }
           },
           {
@@ -4816,7 +4826,7 @@
         }
       },
       {
-        "HashCode": -1605367848,
+        "HashCode": -1344135909,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4853,7 +4863,7 @@
         }
       },
       {
-        "HashCode": -1969035733,
+        "HashCode": 1675804915,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4891,7 +4901,7 @@
         }
       },
       {
-        "HashCode": -727150181,
+        "HashCode": -2127466858,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4948,7 +4958,7 @@
         }
       },
       {
-        "HashCode": 2066409418,
+        "HashCode": -300672580,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5006,7 +5016,7 @@
         }
       },
       {
-        "HashCode": 1686040786,
+        "HashCode": 1995677619,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5025,7 +5035,7 @@
         }
       },
       {
-        "HashCode": -1513521307,
+        "HashCode": 880671840,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5045,7 +5055,7 @@
         }
       },
       {
-        "HashCode": -1050760653,
+        "HashCode": 1485759541,
         "Kind": "Components.EventHandler",
         "Name": "onabort",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5126,7 +5136,7 @@
         }
       },
       {
-        "HashCode": 1069684344,
+        "HashCode": -1645858452,
         "Kind": "Components.EventHandler",
         "Name": "onactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5207,7 +5217,7 @@
         }
       },
       {
-        "HashCode": -1302803355,
+        "HashCode": -140339416,
         "Kind": "Components.EventHandler",
         "Name": "onbeforeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5288,7 +5298,7 @@
         }
       },
       {
-        "HashCode": 340356547,
+        "HashCode": -1900065980,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5369,7 +5379,7 @@
         }
       },
       {
-        "HashCode": 1151591938,
+        "HashCode": -559653795,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5450,7 +5460,7 @@
         }
       },
       {
-        "HashCode": 2078935349,
+        "HashCode": 542358491,
         "Kind": "Components.EventHandler",
         "Name": "onbeforedeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5531,7 +5541,7 @@
         }
       },
       {
-        "HashCode": -1456416150,
+        "HashCode": -459830753,
         "Kind": "Components.EventHandler",
         "Name": "onbeforepaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5612,7 +5622,7 @@
         }
       },
       {
-        "HashCode": 167168875,
+        "HashCode": -2085195886,
         "Kind": "Components.EventHandler",
         "Name": "onblur",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5693,7 +5703,7 @@
         }
       },
       {
-        "HashCode": -135639205,
+        "HashCode": 1260916004,
         "Kind": "Components.EventHandler",
         "Name": "oncanplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5774,7 +5784,7 @@
         }
       },
       {
-        "HashCode": -1902920004,
+        "HashCode": 1212979161,
         "Kind": "Components.EventHandler",
         "Name": "oncanplaythrough",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5855,7 +5865,7 @@
         }
       },
       {
-        "HashCode": 683372111,
+        "HashCode": -1939382599,
         "Kind": "Components.EventHandler",
         "Name": "onchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5936,7 +5946,7 @@
         }
       },
       {
-        "HashCode": 313240201,
+        "HashCode": 79434012,
         "Kind": "Components.EventHandler",
         "Name": "onclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6017,7 +6027,7 @@
         }
       },
       {
-        "HashCode": 901253668,
+        "HashCode": -284246123,
         "Kind": "Components.EventHandler",
         "Name": "oncontextmenu",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6098,7 +6108,7 @@
         }
       },
       {
-        "HashCode": 38342102,
+        "HashCode": -1732993667,
         "Kind": "Components.EventHandler",
         "Name": "oncopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6179,7 +6189,7 @@
         }
       },
       {
-        "HashCode": -1483604146,
+        "HashCode": -2145274943,
         "Kind": "Components.EventHandler",
         "Name": "oncuechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6260,7 +6270,7 @@
         }
       },
       {
-        "HashCode": -1828940249,
+        "HashCode": 1586202865,
         "Kind": "Components.EventHandler",
         "Name": "oncut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6341,7 +6351,7 @@
         }
       },
       {
-        "HashCode": -59738011,
+        "HashCode": -1635742621,
         "Kind": "Components.EventHandler",
         "Name": "ondblclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6422,7 +6432,7 @@
         }
       },
       {
-        "HashCode": -67185499,
+        "HashCode": -1781713789,
         "Kind": "Components.EventHandler",
         "Name": "ondeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6503,7 +6513,7 @@
         }
       },
       {
-        "HashCode": -1909451877,
+        "HashCode": 1556514259,
         "Kind": "Components.EventHandler",
         "Name": "ondrag",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6584,7 +6594,7 @@
         }
       },
       {
-        "HashCode": 78208705,
+        "HashCode": -1863341583,
         "Kind": "Components.EventHandler",
         "Name": "ondragend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6665,7 +6675,7 @@
         }
       },
       {
-        "HashCode": -196294007,
+        "HashCode": 1163156646,
         "Kind": "Components.EventHandler",
         "Name": "ondragenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6746,7 +6756,7 @@
         }
       },
       {
-        "HashCode": -837534509,
+        "HashCode": 403337051,
         "Kind": "Components.EventHandler",
         "Name": "ondragleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6827,7 +6837,7 @@
         }
       },
       {
-        "HashCode": 59769185,
+        "HashCode": 1284400590,
         "Kind": "Components.EventHandler",
         "Name": "ondragover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6908,7 +6918,7 @@
         }
       },
       {
-        "HashCode": 2095823415,
+        "HashCode": -1087213987,
         "Kind": "Components.EventHandler",
         "Name": "ondragstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6989,7 +6999,7 @@
         }
       },
       {
-        "HashCode": -746963065,
+        "HashCode": 1586993434,
         "Kind": "Components.EventHandler",
         "Name": "ondrop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7070,7 +7080,7 @@
         }
       },
       {
-        "HashCode": -145045267,
+        "HashCode": 256736813,
         "Kind": "Components.EventHandler",
         "Name": "ondurationchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7151,7 +7161,7 @@
         }
       },
       {
-        "HashCode": -1362768929,
+        "HashCode": 1511221570,
         "Kind": "Components.EventHandler",
         "Name": "onemptied",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7232,7 +7242,7 @@
         }
       },
       {
-        "HashCode": -247333477,
+        "HashCode": 186436943,
         "Kind": "Components.EventHandler",
         "Name": "onended",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7313,7 +7323,7 @@
         }
       },
       {
-        "HashCode": 1753411582,
+        "HashCode": -48284335,
         "Kind": "Components.EventHandler",
         "Name": "onerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7394,7 +7404,7 @@
         }
       },
       {
-        "HashCode": 2133201149,
+        "HashCode": -169304387,
         "Kind": "Components.EventHandler",
         "Name": "onfocus",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7475,7 +7485,7 @@
         }
       },
       {
-        "HashCode": 1198535796,
+        "HashCode": -1003894558,
         "Kind": "Components.EventHandler",
         "Name": "onfocusin",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7556,7 +7566,7 @@
         }
       },
       {
-        "HashCode": -1723055497,
+        "HashCode": 644647924,
         "Kind": "Components.EventHandler",
         "Name": "onfocusout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7637,7 +7647,7 @@
         }
       },
       {
-        "HashCode": -1006070517,
+        "HashCode": 1458724293,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7718,7 +7728,7 @@
         }
       },
       {
-        "HashCode": 957041472,
+        "HashCode": -1379078721,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7799,7 +7809,7 @@
         }
       },
       {
-        "HashCode": -1360602316,
+        "HashCode": -1776171685,
         "Kind": "Components.EventHandler",
         "Name": "ongotpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7880,7 +7890,7 @@
         }
       },
       {
-        "HashCode": 1764053793,
+        "HashCode": 334794924,
         "Kind": "Components.EventHandler",
         "Name": "oninput",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7961,7 +7971,7 @@
         }
       },
       {
-        "HashCode": -252975011,
+        "HashCode": 336616948,
         "Kind": "Components.EventHandler",
         "Name": "oninvalid",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8042,7 +8052,7 @@
         }
       },
       {
-        "HashCode": -717711135,
+        "HashCode": 452808936,
         "Kind": "Components.EventHandler",
         "Name": "onkeydown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8123,7 +8133,7 @@
         }
       },
       {
-        "HashCode": 607283648,
+        "HashCode": 1119493899,
         "Kind": "Components.EventHandler",
         "Name": "onkeypress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8204,7 +8214,7 @@
         }
       },
       {
-        "HashCode": -1887678544,
+        "HashCode": -969496464,
         "Kind": "Components.EventHandler",
         "Name": "onkeyup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8285,7 +8295,7 @@
         }
       },
       {
-        "HashCode": 838163318,
+        "HashCode": -1550236851,
         "Kind": "Components.EventHandler",
         "Name": "onload",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8366,7 +8376,7 @@
         }
       },
       {
-        "HashCode": -54184650,
+        "HashCode": 408398196,
         "Kind": "Components.EventHandler",
         "Name": "onloadeddata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8447,7 +8457,7 @@
         }
       },
       {
-        "HashCode": -2019471684,
+        "HashCode": -1274929243,
         "Kind": "Components.EventHandler",
         "Name": "onloadedmetadata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8528,7 +8538,7 @@
         }
       },
       {
-        "HashCode": -1560023379,
+        "HashCode": -9183583,
         "Kind": "Components.EventHandler",
         "Name": "onloadend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8609,7 +8619,7 @@
         }
       },
       {
-        "HashCode": -789065672,
+        "HashCode": 1210610416,
         "Kind": "Components.EventHandler",
         "Name": "onloadstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8690,7 +8700,7 @@
         }
       },
       {
-        "HashCode": 344195546,
+        "HashCode": -1596377709,
         "Kind": "Components.EventHandler",
         "Name": "onlostpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8771,7 +8781,7 @@
         }
       },
       {
-        "HashCode": -1357152596,
+        "HashCode": -1386871221,
         "Kind": "Components.EventHandler",
         "Name": "onmousedown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8852,7 +8862,7 @@
         }
       },
       {
-        "HashCode": 1446407728,
+        "HashCode": 562034345,
         "Kind": "Components.EventHandler",
         "Name": "onmousemove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8933,7 +8943,7 @@
         }
       },
       {
-        "HashCode": 975488152,
+        "HashCode": 1317740732,
         "Kind": "Components.EventHandler",
         "Name": "onmouseout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9014,7 +9024,7 @@
         }
       },
       {
-        "HashCode": 390363260,
+        "HashCode": 1833599942,
         "Kind": "Components.EventHandler",
         "Name": "onmouseover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9095,7 +9105,7 @@
         }
       },
       {
-        "HashCode": -2068195826,
+        "HashCode": -414605366,
         "Kind": "Components.EventHandler",
         "Name": "onmouseup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9176,7 +9186,7 @@
         }
       },
       {
-        "HashCode": 642302611,
+        "HashCode": 2037684190,
         "Kind": "Components.EventHandler",
         "Name": "onmousewheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9257,7 +9267,7 @@
         }
       },
       {
-        "HashCode": -199408810,
+        "HashCode": -548537343,
         "Kind": "Components.EventHandler",
         "Name": "onpaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9338,7 +9348,7 @@
         }
       },
       {
-        "HashCode": -1936229409,
+        "HashCode": 20081019,
         "Kind": "Components.EventHandler",
         "Name": "onpause",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9419,7 +9429,7 @@
         }
       },
       {
-        "HashCode": -2120264642,
+        "HashCode": -186297614,
         "Kind": "Components.EventHandler",
         "Name": "onplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9500,7 +9510,7 @@
         }
       },
       {
-        "HashCode": -1664796659,
+        "HashCode": 1861083395,
         "Kind": "Components.EventHandler",
         "Name": "onplaying",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9581,7 +9591,7 @@
         }
       },
       {
-        "HashCode": 1082344211,
+        "HashCode": -1520060809,
         "Kind": "Components.EventHandler",
         "Name": "onpointercancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9662,7 +9672,7 @@
         }
       },
       {
-        "HashCode": 873311076,
+        "HashCode": 1835437127,
         "Kind": "Components.EventHandler",
         "Name": "onpointerdown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9743,7 +9753,7 @@
         }
       },
       {
-        "HashCode": 1856290898,
+        "HashCode": -1909874140,
         "Kind": "Components.EventHandler",
         "Name": "onpointerenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9824,7 +9834,7 @@
         }
       },
       {
-        "HashCode": -1542424916,
+        "HashCode": -2026767424,
         "Kind": "Components.EventHandler",
         "Name": "onpointerleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9905,7 +9915,7 @@
         }
       },
       {
-        "HashCode": -185617271,
+        "HashCode": -665882287,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9986,7 +9996,7 @@
         }
       },
       {
-        "HashCode": -1791882691,
+        "HashCode": 173351193,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10067,7 +10077,7 @@
         }
       },
       {
-        "HashCode": -1200701125,
+        "HashCode": 1537278579,
         "Kind": "Components.EventHandler",
         "Name": "onpointermove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10148,7 +10158,7 @@
         }
       },
       {
-        "HashCode": 1209893484,
+        "HashCode": -1645327922,
         "Kind": "Components.EventHandler",
         "Name": "onpointerout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10229,7 +10239,7 @@
         }
       },
       {
-        "HashCode": 1827616163,
+        "HashCode": -596648043,
         "Kind": "Components.EventHandler",
         "Name": "onpointerover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10310,7 +10320,7 @@
         }
       },
       {
-        "HashCode": -1206395063,
+        "HashCode": -509879080,
         "Kind": "Components.EventHandler",
         "Name": "onpointerup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10391,7 +10401,7 @@
         }
       },
       {
-        "HashCode": -1592984195,
+        "HashCode": 171908911,
         "Kind": "Components.EventHandler",
         "Name": "onprogress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10472,7 +10482,7 @@
         }
       },
       {
-        "HashCode": -1321159735,
+        "HashCode": -1244664511,
         "Kind": "Components.EventHandler",
         "Name": "onratechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10553,7 +10563,7 @@
         }
       },
       {
-        "HashCode": 373414256,
+        "HashCode": 26156144,
         "Kind": "Components.EventHandler",
         "Name": "onreadystatechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10634,7 +10644,7 @@
         }
       },
       {
-        "HashCode": 1881749271,
+        "HashCode": -1889349368,
         "Kind": "Components.EventHandler",
         "Name": "onreset",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10715,7 +10725,7 @@
         }
       },
       {
-        "HashCode": -693681880,
+        "HashCode": -762118484,
         "Kind": "Components.EventHandler",
         "Name": "onscroll",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10796,7 +10806,7 @@
         }
       },
       {
-        "HashCode": -149728110,
+        "HashCode": -638940816,
         "Kind": "Components.EventHandler",
         "Name": "onseeked",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10877,7 +10887,7 @@
         }
       },
       {
-        "HashCode": -944653272,
+        "HashCode": 57818780,
         "Kind": "Components.EventHandler",
         "Name": "onseeking",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10958,7 +10968,7 @@
         }
       },
       {
-        "HashCode": 723212908,
+        "HashCode": -1327541390,
         "Kind": "Components.EventHandler",
         "Name": "onselect",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11039,7 +11049,7 @@
         }
       },
       {
-        "HashCode": 1798921474,
+        "HashCode": 1690890319,
         "Kind": "Components.EventHandler",
         "Name": "onselectionchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11120,7 +11130,7 @@
         }
       },
       {
-        "HashCode": 774183857,
+        "HashCode": 1539952739,
         "Kind": "Components.EventHandler",
         "Name": "onselectstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11201,7 +11211,7 @@
         }
       },
       {
-        "HashCode": 671838416,
+        "HashCode": 2003034211,
         "Kind": "Components.EventHandler",
         "Name": "onstalled",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11282,7 +11292,7 @@
         }
       },
       {
-        "HashCode": 2023405188,
+        "HashCode": -1538543590,
         "Kind": "Components.EventHandler",
         "Name": "onstop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11363,7 +11373,7 @@
         }
       },
       {
-        "HashCode": 762850264,
+        "HashCode": 1101960238,
         "Kind": "Components.EventHandler",
         "Name": "onsubmit",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11444,7 +11454,7 @@
         }
       },
       {
-        "HashCode": -388907572,
+        "HashCode": -997331722,
         "Kind": "Components.EventHandler",
         "Name": "onsuspend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11525,7 +11535,7 @@
         }
       },
       {
-        "HashCode": 1982131930,
+        "HashCode": -383054169,
         "Kind": "Components.EventHandler",
         "Name": "ontimeout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11606,7 +11616,7 @@
         }
       },
       {
-        "HashCode": 446936610,
+        "HashCode": 559245894,
         "Kind": "Components.EventHandler",
         "Name": "ontimeupdate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11687,7 +11697,7 @@
         }
       },
       {
-        "HashCode": 570699508,
+        "HashCode": -607828375,
         "Kind": "Components.EventHandler",
         "Name": "ontouchcancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11768,7 +11778,7 @@
         }
       },
       {
-        "HashCode": -459375109,
+        "HashCode": 597979346,
         "Kind": "Components.EventHandler",
         "Name": "ontouchend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11849,7 +11859,7 @@
         }
       },
       {
-        "HashCode": -782195052,
+        "HashCode": 326029846,
         "Kind": "Components.EventHandler",
         "Name": "ontouchenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11930,7 +11940,7 @@
         }
       },
       {
-        "HashCode": -1864235589,
+        "HashCode": -1142829630,
         "Kind": "Components.EventHandler",
         "Name": "ontouchleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12011,7 +12021,7 @@
         }
       },
       {
-        "HashCode": -830690705,
+        "HashCode": -863641946,
         "Kind": "Components.EventHandler",
         "Name": "ontouchmove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12092,7 +12102,7 @@
         }
       },
       {
-        "HashCode": 995703595,
+        "HashCode": 463536925,
         "Kind": "Components.EventHandler",
         "Name": "ontouchstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12173,7 +12183,7 @@
         }
       },
       {
-        "HashCode": -831362509,
+        "HashCode": -1142531934,
         "Kind": "Components.EventHandler",
         "Name": "onvolumechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12254,7 +12264,7 @@
         }
       },
       {
-        "HashCode": -685876499,
+        "HashCode": 1431021283,
         "Kind": "Components.EventHandler",
         "Name": "onwaiting",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12335,7 +12345,7 @@
         }
       },
       {
-        "HashCode": 420043953,
+        "HashCode": -550334389,
         "Kind": "Components.EventHandler",
         "Name": "onwheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12416,7 +12426,7 @@
         }
       },
       {
-        "HashCode": 972340475,
+        "HashCode": -375089180,
         "Kind": "Components.Splat",
         "Name": "Attributes",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12455,7 +12465,7 @@
         }
       },
       {
-        "HashCode": -578525471,
+        "HashCode": 1787361313,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
@@ -12770,7 +12780,7 @@
         }
       },
       {
-        "HashCode": 1038956813,
+        "HashCode": 383932386,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -12967,7 +12977,7 @@
         }
       },
       {
-        "HashCode": -63961424,
+        "HashCode": 57507885,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13094,7 +13104,7 @@
         }
       },
       {
-        "HashCode": -1908255152,
+        "HashCode": -1864503048,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13149,7 +13159,7 @@
         }
       },
       {
-        "HashCode": -1645299795,
+        "HashCode": -1374462733,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13281,7 +13291,7 @@
         }
       },
       {
-        "HashCode": -569459577,
+        "HashCode": 320183559,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13327,7 +13337,7 @@
         }
       },
       {
-        "HashCode": -1585481331,
+        "HashCode": 80584927,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13744,7 +13754,7 @@
         }
       },
       {
-        "HashCode": -1798973326,
+        "HashCode": 219060881,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13846,7 +13856,7 @@
         }
       },
       {
-        "HashCode": 1210344761,
+        "HashCode": 55903043,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13892,7 +13902,7 @@
         }
       },
       {
-        "HashCode": 419827825,
+        "HashCode": -378412220,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13962,7 +13972,7 @@
         }
       },
       {
-        "HashCode": -237183403,
+        "HashCode": 245099428,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13995,7 +14005,7 @@
         }
       },
       {
-        "HashCode": -1251104293,
+        "HashCode": 1124646473,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14191,7 +14201,7 @@
         }
       },
       {
-        "HashCode": -1340604155,
+        "HashCode": -771427825,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14219,7 +14229,7 @@
         }
       },
       {
-        "HashCode": -462051255,
+        "HashCode": 133995591,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14300,7 +14310,7 @@
         }
       },
       {
-        "HashCode": -1374424123,
+        "HashCode": 741733358,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14453,7 +14463,7 @@
         }
       },
       {
-        "HashCode": 356739912,
+        "HashCode": 1208534499,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14512,7 +14522,7 @@
         }
       },
       {
-        "HashCode": -80937417,
+        "HashCode": -143266935,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14554,7 +14564,7 @@
         }
       },
       {
-        "HashCode": -1889275495,
+        "HashCode": 1355771041,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14587,7 +14597,7 @@
         }
       },
       {
-        "HashCode": -859101446,
+        "HashCode": 183153797,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14621,7 +14631,7 @@
         }
       },
       {
-        "HashCode": 899238057,
+        "HashCode": -482054960,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14690,7 +14700,7 @@
         }
       },
       {
-        "HashCode": -1619008684,
+        "HashCode": 2137467680,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14768,7 +14778,7 @@
         }
       },
       {
-        "HashCode": 238684204,
+        "HashCode": 563209268,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14846,7 +14856,7 @@
         }
       },
       {
-        "HashCode": -806598123,
+        "HashCode": -64299294,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14930,7 +14940,7 @@
         }
       },
       {
-        "HashCode": 330885602,
+        "HashCode": -1843837065,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15014,7 +15024,7 @@
         }
       },
       {
-        "HashCode": 2072756337,
+        "HashCode": 1065262597,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15098,7 +15108,7 @@
         }
       },
       {
-        "HashCode": -296197888,
+        "HashCode": 1736145114,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15182,7 +15192,7 @@
         }
       },
       {
-        "HashCode": -34757060,
+        "HashCode": 1012315417,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15266,7 +15276,7 @@
         }
       },
       {
-        "HashCode": 1506295786,
+        "HashCode": -1259280811,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15350,7 +15360,7 @@
         }
       },
       {
-        "HashCode": -458201023,
+        "HashCode": -1381621917,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15434,7 +15444,7 @@
         }
       },
       {
-        "HashCode": -498409182,
+        "HashCode": -32931368,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15518,7 +15528,7 @@
         }
       },
       {
-        "HashCode": 646980565,
+        "HashCode": 1705125102,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15602,7 +15612,7 @@
         }
       },
       {
-        "HashCode": 1485551880,
+        "HashCode": 907817356,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15686,7 +15696,7 @@
         }
       },
       {
-        "HashCode": -401614720,
+        "HashCode": -1897310267,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15770,7 +15780,7 @@
         }
       },
       {
-        "HashCode": -598817022,
+        "HashCode": 428896783,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15854,7 +15864,7 @@
         }
       },
       {
-        "HashCode": 1621065071,
+        "HashCode": 655430587,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15932,7 +15942,7 @@
         }
       },
       {
-        "HashCode": 2122628386,
+        "HashCode": -620407704,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16010,7 +16020,7 @@
         }
       },
       {
-        "HashCode": 931774755,
+        "HashCode": -448906347,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16051,7 +16061,7 @@
         }
       },
       {
-        "HashCode": -350866415,
+        "HashCode": -576401507,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16093,7 +16103,7 @@
         }
       },
       {
-        "HashCode": 464728941,
+        "HashCode": -1544090650,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16134,7 +16144,7 @@
         }
       },
       {
-        "HashCode": -886689320,
+        "HashCode": -1504806858,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16176,7 +16186,7 @@
         }
       },
       {
-        "HashCode": 128870257,
+        "HashCode": -67235066,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16217,7 +16227,7 @@
         }
       },
       {
-        "HashCode": -2091079492,
+        "HashCode": -1254933522,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16259,7 +16269,7 @@
         }
       },
       {
-        "HashCode": -740895083,
+        "HashCode": 95511895,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16300,7 +16310,7 @@
         }
       },
       {
-        "HashCode": 1258210574,
+        "HashCode": -889418278,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16342,7 +16352,7 @@
         }
       },
       {
-        "HashCode": -1021209565,
+        "HashCode": -381887945,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16383,7 +16393,7 @@
         }
       },
       {
-        "HashCode": -396711621,
+        "HashCode": 461701017,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16425,7 +16435,7 @@
         }
       },
       {
-        "HashCode": -693812655,
+        "HashCode": -1620087000,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16466,7 +16476,7 @@
         }
       },
       {
-        "HashCode": -1658305119,
+        "HashCode": 1075646749,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16508,7 +16518,7 @@
         }
       },
       {
-        "HashCode": -1192035537,
+        "HashCode": 1373265292,
         "Kind": "Components.Ref",
         "Name": "Ref",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16547,7 +16557,7 @@
         }
       },
       {
-        "HashCode": 192826806,
+        "HashCode": -501703246,
         "Kind": "Components.Key",
         "Name": "Key",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16591,178 +16601,178 @@
   "RootNamespace": "AppKeep.Web",
   "Documents": [
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchComponent.razor",
-      "TargetPath": "Pages\\Search\\SearchComponent.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/SetupMachine/NewMachineButton.razor",
-      "TargetPath": "Pages\\SetupMachine\\NewMachineButton.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/TabControl/TabPage.razor",
-      "TargetPath": "Shared\\TabControl\\TabPage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/SetupMachine/SetupNewMachinePage.razor",
-      "TargetPath": "Pages\\SetupMachine\\SetupNewMachinePage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/UpkeepTemplate/UpkeepProfileComponent.razor",
-      "TargetPath": "Pages\\UpkeepTemplate\\UpkeepProfileComponent.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Authentication/Login.razor",
-      "TargetPath": "Pages\\Authentication\\Login.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/PageBase.razor",
-      "TargetPath": "Shared\\PageBase.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchPage.razor",
-      "TargetPath": "Pages\\Search\\SearchPage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/MyPlans/MyPlansPage.razor",
-      "TargetPath": "Pages\\MyPlans\\MyPlansPage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/LoginLayout.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/LoginLayout.razor",
       "TargetPath": "Shared\\LoginLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Index.razor",
+      "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/UpkeepTemplate/TemplateDetail.razor",
-      "TargetPath": "Pages\\UpkeepTemplate\\TemplateDetail.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/MyMachines/MachineProfileComponent.razor",
-      "TargetPath": "Pages\\MyMachines\\MachineProfileComponent.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor",
-      "TargetPath": "Pages\\Search\\SearchListComponent.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/RedirectToLogin.razor",
-      "TargetPath": "Shared\\RedirectToLogin.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/SurveyPrompt.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/MyMachines/MyMachinesPage.razor",
-      "TargetPath": "Pages\\MyMachines\\MyMachinesPage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/MyMachines/UserMachinePage.razor",
-      "TargetPath": "Pages\\MyMachines\\UserMachinePage.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/MyMachines/MyMachinesPage.razor",
+      "TargetPath": "Pages\\MyMachines\\MyMachinesPage.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Authentication/LoginProcess.cshtml",
-      "TargetPath": "Pages\\Authentication\\LoginProcess.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/LoginControl.razor",
-      "TargetPath": "Shared\\LoginControl.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/Component.razor",
-      "TargetPath": "Shared\\Component.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/UserAuthentication.razor",
-      "TargetPath": "Shared\\UserAuthentication.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Authentication/Logout.cshtml",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Authentication/Logout.cshtml",
       "TargetPath": "Pages\\Authentication\\Logout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/TabControl/TabControl.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/MyMachines/MachineProfileComponent.razor",
+      "TargetPath": "Pages\\MyMachines\\MachineProfileComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/SetupMachine/NewMachineButton.razor",
+      "TargetPath": "Pages\\SetupMachine\\NewMachineButton.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchPage.razor",
+      "TargetPath": "Pages\\Search\\SearchPage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/UpkeepTemplate/UpkeepProfileComponent.razor",
+      "TargetPath": "Pages\\UpkeepTemplate\\UpkeepProfileComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/UserAuthentication.razor",
+      "TargetPath": "Shared\\UserAuthentication.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/Component.razor",
+      "TargetPath": "Shared\\Component.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/TabControl/TabControl.razor",
       "TargetPath": "Shared\\TabControl\\TabControl.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/MyMachines/MachineTileComponent.razor",
-      "TargetPath": "Pages\\MyMachines\\MachineTileComponent.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/LoginControl.razor",
+      "TargetPath": "Shared\\LoginControl.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchComponent.razor",
+      "TargetPath": "Pages\\Search\\SearchComponent.razor",
+      "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/UpkeepTemplate/WorkItemStatus.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/UpkeepTemplate/WorkItemStatus.razor",
       "TargetPath": "Pages\\UpkeepTemplate\\WorkItemStatus.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Shared/NavTop.razor",
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/NavTop.razor",
       "TargetPath": "Shared\\NavTop.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/UpkeepTemplate/TemplateDetail.razor",
+      "TargetPath": "Pages\\UpkeepTemplate\\TemplateDetail.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/MyMachines/UserMachinePage.razor",
+      "TargetPath": "Pages\\MyMachines\\UserMachinePage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/SetupMachine/SetupNewMachinePage.razor",
+      "TargetPath": "Pages\\SetupMachine\\SetupNewMachinePage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/MyMachines/MachineTileComponent.razor",
+      "TargetPath": "Pages\\MyMachines\\MachineTileComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor",
+      "TargetPath": "Pages\\Search\\SearchListComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/RedirectToLogin.razor",
+      "TargetPath": "Shared\\RedirectToLogin.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Authentication/LoginProcess.cshtml",
+      "TargetPath": "Pages\\Authentication\\LoginProcess.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Authentication/Login.razor",
+      "TargetPath": "Pages\\Authentication\\Login.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/PageBase.razor",
+      "TargetPath": "Shared\\PageBase.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Shared/TabControl/TabPage.razor",
+      "TargetPath": "Shared\\TabControl\\TabPage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/MyPlans/MyPlansPage.razor",
+      "TargetPath": "Pages\\MyPlans\\MyPlansPage.razor",
       "FileKind": "component"
     }
   ],

@@ -13,112 +13,112 @@ namespace AppKeep.Web.Pages.Search
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 1 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 2 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 3 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 4 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 5 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 6 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 7 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 8 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using AppKeep;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 9 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using AppKeep.Web.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 10 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using AppKeep.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 12 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using AppKeep.Web.Pages.MyMachines;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 14 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using AppKeep.Web.Pages.UpkeepTemplate;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/_Imports.razor"
+#line 15 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/_Imports.razor"
 using AppKeep.Web.Shared.TabControl;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
+#line 1 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
 using AppKeep.Domain;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
+#line 2 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
 using AppKeep.Service;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
+#line 3 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
 using Microsoft.AspNetCore.Http;
 
 #line default
@@ -132,7 +132,7 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
+#line 48 "/Users/carlosvillanuevaiii/Documents/Carlos Personal/Projects/TeamA/AppKeep/Pages/Search/SearchListComponent.razor"
       
     private bool IsSetUpMode = false;
     private UpkeepTemplate profile = new UpkeepTemplate();
