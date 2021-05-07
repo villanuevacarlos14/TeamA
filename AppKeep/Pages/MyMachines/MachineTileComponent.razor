@@ -1,0 +1,30 @@
+﻿@inject NavigationManager Navigation
+ 
+<div class="card text-center" style="width: 18rem; cursor: pointer; margin: 0 auto;" @onclick="(() => OnClickMachine(UserMachine.UserMachineId))">
+    <div class="min-vh-400 ">
+        <img class="card-img-top" src="images/@(UserMachine.ImgFile ?? UserMachine.Machine.ImgFile ?? "machine.png")" alt="Card image cap">
+    </div>
+    <div class="card-body">
+        <h3 class="card-text">@UserMachine.Machine.Name</h3>
+        <small>@UserMachine.Machine.Make</small>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public UserMachine UserMachine { get; set; }
+
+    //protected override void OnParametersSet()
+    //{
+    //    base.OnParametersSet();
+
+
+    //}
+
+    private void OnClickMachine(int userMachineId)
+    {
+        // Go to Machine Upkeep Profile
+        Navigation.NavigateTo($"/mymachine/{userMachineId}");
+        Console.WriteLine(userMachineId);
+    }
+}

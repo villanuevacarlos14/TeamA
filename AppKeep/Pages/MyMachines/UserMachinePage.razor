@@ -1,0 +1,32 @@
+﻿@page "/mymachine/{UserMachineId:int}"
+@attribute [Authorize]
+@inject IUserMachineService UserMachineService
+@inherits PageBase
+@inject NavigationManager Navigation
+
+<div>
+    <MachineProfileComponent UserMachineId="@userMachineId"></MachineProfileComponent>
+
+</div>
+
+@code {
+    [Parameter]
+    public int UserMachineId { get; set; }
+
+    private int userMachineId;
+    private int currentUserId;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        userMachineId = UserMachineId;
+        currentUserId = GetUserId();
+
+        var userMachine = UserMachineService.GetUserMachineByIdAsync(userMachineId);
+
+        if (userMachine.Result.UserId != currentUserId)
+        {
+            Navigation.NavigateTo("pagenotfound");
+        }
+    }
+}

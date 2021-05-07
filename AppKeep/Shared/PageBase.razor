@@ -1,0 +1,60 @@
+﻿@using Microsoft.AspNetCore.Http
+@attribute [Authorize]
+@inject IMachineService machineService
+@inject IHttpContextAccessor httpContextAccessor
+@inherits LayoutComponentBase
+
+<h3>PageBase</h3>
+
+@code {
+    public int GetUserId()
+    {
+        int userId = 0;
+
+        if (httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+        {
+            var claim = httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "UserId");
+
+            if (claim != null && Int32.TryParse(claim.Value, out int claimUserId))
+            {
+                userId = claimUserId;
+            }
+        }
+
+        return userId;
+    }
+
+    public UserTypeEnum GetUserType()
+    {
+        UserTypeEnum userType = UserTypeEnum.NotSet;
+
+        if (httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+        {
+            var claim = httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "UserType");
+
+            if (claim != null && Enum.TryParse(claim.Value, out UserTypeEnum claimUserId))
+            {
+                userType = claimUserId;
+            }
+        }
+
+        return userType;
+    }
+
+    public string GetFullName()
+    {
+        string fullName = string.Empty;
+
+        if (httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+        {
+            var claim = httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "FullName");
+
+            if (claim != null)
+            {
+                fullName = claim.Value;
+            }
+        }
+
+        return fullName;
+    }
+}

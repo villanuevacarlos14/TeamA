@@ -1,0 +1,279 @@
+﻿@page "/templateDetail/{TemplateId:int}"
+@inject IUpkeepTemplateDetailService templateDetailService
+@inject IMyPlanService MyPlanService
+@inherits PageBase
+
+<div class="container">
+    @if (editMode)
+    {
+        <div style="border: 1px solid lightgrey; padding: 30px;">
+            <EditForm Model="@templateDetail" OnValidSubmit="HandleSubmitWork">
+                <div class="form-group">
+                    <label for="Description" class="col-form-label">Description</label>
+                    <InputText id="Description" @bind-Value="templateDetail.Description" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="PartName" class="col-form-label">Part</label>
+                    <InputText id="PartName" @bind-Value="templateDetail.Part" class="form-control" />
+                </div>
+                <div class="form-group form-check">
+                    <InputCheckbox id="IsRecurring" @bind-Value="templateDetail.IsRecurring" class="form-check-input" />
+                    <label for="IsRecurring" class="form-check-label">Is Recurring</label>
+                </div>
+                <div class="form-group">
+                    <label for="interval" class="col-form-label">Days Interval</label>
+                    <InputNumber id="interval" @bind-Value="templateDetail.Interval" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="period" class="col-form-label">Repeats</label>
+                    <InputNumber id="period" @bind-Value="templateDetail.Period" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="startDate" class="col-form-label">Start:</label>
+                    <InputDate id="startDate" @bind-Value="templateDetail.StartDate" class="form-control" />
+                </div>
+                @if(!IsReadOnly)
+                {
+                    <button class="btn btn-primary" type="submit">Save Changes</button>
+                    <button class="btn btn-danger" type="button" @onclick="CancelEdit">Cancel</button>
+                }
+            </EditForm>
+        </div>
+        
+    }
+    else
+    {
+        <div class="card" style="width: 100%;">
+            @*<img class="card-img-top" src="..." alt="Card image cap">*@
+            <div class="card-body @GetWorkItemBg()">
+                <div><h5 class="card-title">@templateDetail.Description</h5></div>
+                <div class="row">
+                    <div class="col-6">
+                        <table class="table table-borderless table-sm">
+                            <tbody>
+                                <tr>
+                                    <td>Part</td>
+                                    <td>@templateDetail.Part</td>
+                                </tr>
+                                <tr>
+                                    <td>Is Recurring?</td>
+                                    <td>@(templateDetail.IsRecurring ? "Yes" : "No")</td>
+                                </tr>
+                                <tr>
+                                    <td>Days Interval</td>
+                                    <td>@templateDetail.Interval</td>
+                                </tr>
+                                <tr>
+                                    <td>Repeats</td>
+                                    <td>@templateDetail.Period</td>
+                                </tr>
+                                <tr>
+                                    <td>Start On</td>
+                                    <td>@templateDetail.StartDate</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    @if (workItem != null)
+                    {
+                        <div class="col-6">
+                            <div style="padding: 10px; border: 1px solid lightgrey; border-radius: 5px;">
+                                <h5>Scheduled Date: @workItem.ScheduleDate.ToShortDateString()</h5>
+                                <table class="table table-borderless table-sm table-light">
+                                    <tbody>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td><WorkItemStatus WorkStatus="@workItem.Status"></WorkItemStatus></td>
+                                        </tr>
+                                        @if (workItem.StartWorkDateTime.HasValue && workItem.StartWorkDateTime != DateTime.MinValue)
+                                        {
+                                            <tr>
+                                                <td>Latest Work started on</td>
+                                                <td>@workItem.StartWorkDateTime.Value</td>
+                                            </tr>
+                                        }
+
+                                        @if (workItem.CompleteWorkDateTime.HasValue && workItem.CompleteWorkDateTime != DateTime.MinValue && workItem.Status == WorkStatusEnum.Done)
+                                        {
+                                            <tr>
+                                                <td>Latest Work completed on</td>
+                                                <td>@workItem.CompleteWorkDateTime.Value</td>
+                                            </tr>
+                                        }
+
+                                        @if (workItem.NeedActionDateTime.HasValue && workItem.NeedActionDateTime != DateTime.MinValue && workItem.Status == WorkStatusEnum.NeedsAction)
+                                        {
+                                            <tr>
+                                                <td>Raised Emergency on</td>
+                                                <td>@workItem.NeedActionDateTime.Value</td>
+                                            </tr>
+                                        }
+
+                                        @if (workItem.Assistant != null && workItem.Assistant.UserId != currentUserId)
+                                        {
+                                            <tr>
+                                                <td>Assistant</td>
+                                                <td>@workItem.Assistant.FullName</td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                </table>
+                                <div class="text-center">
+                                    <button class="btn btn-primary" type="button" @onclick="@(() => ClaimWork(workItem))">Start Work</button>
+                                    <button class="btn btn-success" type="button" @onclick="@(() => MarkAsDone(workItem))">Mark as Done</button>
+                                    <button class="btn btn-danger" type="button" @onclick="@(() => NeedsAction(workItem))">Needs Action</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                
+            </div>
+            @if(!IsReadOnly)
+            {
+                <div class="card-footer">
+                    <button class="btn btn-primary" @onclick="ToggleEdit">Edit</button>
+                    <button class="btn btn-danger" @onclick="RemoveWorkItem">Remove</button>
+                </div>
+            }
+        </div>
+        
+    }
+</div>
+
+
+@code {
+    [Parameter]
+    public bool IsReadOnly {get;set;}
+
+    [Parameter]
+    public int TemplateId { get; set; }
+
+    [Parameter]
+    public UpkeepTemplateDetail TemplateDetailItem { get; set; }
+
+    [Parameter]
+    public MyPlanItem WorkItem { get; set; }
+
+    private int templateId;
+    private UpkeepTemplateDetail templateDetail = new UpkeepTemplateDetail();
+
+    private bool editMode = false;
+    private int currentUserId;
+    private MyPlanItem workItem;
+
+    [Parameter]
+    public EventCallback<UpkeepTemplateDetail> OnDeletedWorkItem { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        base.OnParametersSet();
+
+        if (TemplateId != 0)
+        {
+            templateId = TemplateId;
+
+            templateDetail = await templateDetailService.GetUpkeepTemplateDetailByIdAsync(templateId);
+        }
+        else
+        {
+            templateDetail = TemplateDetailItem;
+
+            if (templateDetail.UpkeepTemplateDetailId == 0)
+            {
+                editMode = true;
+            }
+        }
+
+        currentUserId = GetUserId();
+        workItem = WorkItem ?? templateDetail.WorkItem;
+
+    }
+
+    [Parameter]
+    public EventCallback<UpkeepTemplateDetail> OnCancelClick { get; set; }
+
+    private void CancelEdit()
+    {
+        editMode = false;
+
+        if (templateDetail.UpkeepTemplateDetailId == 0)
+        {
+            OnCancelClick.InvokeAsync(templateDetail);
+        }
+    }
+
+    private string GetWorkItemBg()
+    {
+        string bgClass = string.Empty;
+        switch (templateDetail.Status)
+        {
+            case WorkStatusEnum.NotSet:
+                break;
+            case WorkStatusEnum.Pending:
+                break;
+            case WorkStatusEnum.InProgress:
+                break;
+            case WorkStatusEnum.Done:
+                break;
+            case WorkStatusEnum.NeedsAction:
+                bgClass = "red";
+                break;
+            default:
+                break;
+        }
+        return bgClass;
+    }
+
+    private async Task HandleSubmitWork()
+    {
+        if (templateDetail.UpkeepTemplateDetailId == 0)
+        {
+            templateDetail = await templateDetailService.AddUpkeepTemplateDetailAsync(templateDetail, currentUserId);
+        }
+        else
+        {
+            templateDetail = await templateDetailService.UpdateUpkeepTemplateDetailAsync(templateDetail, currentUserId);
+        }
+
+        workItem = WorkItem ?? templateDetail.WorkItem;
+
+        editMode = false;
+    }
+
+    private void ToggleEdit()
+    {
+        editMode = true;
+    }
+
+    private async Task RemoveWorkItem()
+    {
+        await templateDetailService.DeleteWorkItem(templateDetail);
+        OnDeletedWorkItem.InvokeAsync(templateDetail);
+    }
+
+    private async Task ClaimWork(MyPlanItem workItem)
+    {
+        workItem.WorkedByUserId = currentUserId;
+        workItem.StartWorkDateTime = DateTime.Now;
+        workItem.Status = WorkStatusEnum.InProgress;
+        workItem = await MyPlanService.SaveOrUpdatePlanAsync(workItem);
+    }
+
+    private async Task MarkAsDone(MyPlanItem workItem)
+    {
+        workItem.WorkedByUserId = currentUserId;
+        workItem.CompleteWorkDateTime = DateTime.Now;
+        workItem.Status = WorkStatusEnum.Done;
+        workItem = await MyPlanService.SaveOrUpdatePlanAsync(workItem);
+    }
+
+    private async Task NeedsAction(MyPlanItem workItem)
+    {
+        workItem.WorkedByUserId = currentUserId;
+        workItem.NeedActionDateTime = DateTime.Now;
+        workItem.Status = WorkStatusEnum.NeedsAction;
+        workItem = await MyPlanService.SaveOrUpdatePlanAsync(workItem);
+    }
+}

@@ -1,0 +1,9 @@
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/bin/Debug/netcoreapp3.1/AppKeep.Data.deps.json
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/bin/Debug/netcoreapp3.1/AppKeep.Data.dll
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/bin/Debug/netcoreapp3.1/AppKeep.Data.pdb
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/Debug/netcoreapp3.1/AppKeep.Data.csprojAssemblyReference.cache
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/Debug/netcoreapp3.1/AppKeep.Data.AssemblyInfoInputs.cache
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/Debug/netcoreapp3.1/AppKeep.Data.AssemblyInfo.cs
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/Debug/netcoreapp3.1/AppKeep.Data.csproj.CoreCompileInputs.cache
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/Debug/netcoreapp3.1/AppKeep.Data.dll
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/Debug/netcoreapp3.1/AppKeep.Data.pdb

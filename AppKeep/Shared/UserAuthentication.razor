@@ -1,0 +1,13 @@
+﻿@using System.Web;
+
+<AuthorizeView>
+    <Authorized>
+        <b>Hello, @context.User.Identity.Name!</b>
+        <a class="ml-md-auto btn btn-primary"
+           href="/authentication/logout?returnUrl=/"
+           target="_top">Logout</a>
+    </Authorized>
+    <NotAuthorized>
+        <p>Not Authorized</p>
+    </NotAuthorized>
+</AuthorizeView>

@@ -1,0 +1,12 @@
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/bin/Debug/netcoreapp3.1/AppKeep.Domain.deps.json
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/bin/Debug/netcoreapp3.1/AppKeep.Domain.dll
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/bin/Debug/netcoreapp3.1/AppKeep.Domain.pdb
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/bin/Debug/netcoreapp3.1/AppKeep.Data.dll
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/bin/Debug/netcoreapp3.1/AppKeep.Data.pdb
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.csprojAssemblyReference.cache
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.AssemblyInfoInputs.cache
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.AssemblyInfo.cs
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.csproj.CoreCompileInputs.cache
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.csproj.CopyComplete
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.dll
+/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/Debug/netcoreapp3.1/AppKeep.Domain.pdb

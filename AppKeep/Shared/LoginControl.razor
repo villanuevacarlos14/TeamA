@@ -1,0 +1,20 @@
+﻿@using System.Web;
+@inherits PageBase
+
+<AuthorizeView>
+    <Authorized>
+        Hello, @GetFullName()!&nbsp;
+        <a class="ml-md-auto btn btn-link" href="/authentication/logout?returnUrl=/" target="_top">Logout</a>
+    </Authorized>
+    <NotAuthorized>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    string Username = "";
+    string Password = "";
+    private string encode(string param)
+    {
+        return HttpUtility.UrlEncode(param);
+    }
+}

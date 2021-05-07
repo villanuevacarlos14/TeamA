@@ -1,0 +1,23 @@
+﻿@page "/setupnewmachine"
+@attribute [Authorize]
+
+<div>
+    <div class="text-center m-3">
+        <h2>Setup New Machine</h2>
+    </div>
+    <MachineProfileComponent MachineItem="@newMachine" IsEditMode="true"></MachineProfileComponent>
+
+</div>
+
+@code {
+    private UserMachine newMachine;
+
+    public SetupNewMachinePage()
+    {
+        newMachine = new UserMachine();
+        newMachine.Machine = new Machine();
+
+        // TODO: NEed to figure out the ID passed here would be the ID of the logged in USer
+        newMachine.UserId = 1;
+    }
+}

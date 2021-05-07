@@ -1,0 +1,82 @@
+﻿@page "/mymachines"
+@inject IUserMachineService UserMachineService
+@attribute [Authorize]
+@inherits PageBase
+
+@if (myMachines.Any())
+{
+<div>
+    <div class="text-center m-3">
+        <h2>My Machines</h2>
+    </div>
+    <br />
+    <br />
+    @for (var i = 0; i < numRows; i++)
+    {
+        <div class="row" style="padding: 0 100px;">
+
+            @foreach (var machine in myMachines.Skip(skipMachines).Take(4).ToList())
+            {
+                <div class="col-md-3 text-center">
+                    <AppKeep.Web.Pages.MyMachines.MachineTileComponent UserMachine="@machine"></AppKeep.Web.Pages.MyMachines.MachineTileComponent>
+                </div>
+            }
+        </div>
+
+
+        skipMachines += 4;
+
+    }
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-12 text-center">
+            <AppKeep.Web.Pages.Search.SearchPage IsCompact="@(true)"></AppKeep.Web.Pages.Search.SearchPage>
+        </div>
+    </div>
+</div>
+}
+else
+{
+    <div class="row">
+        <div class="col-12 text-center">
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>Uh oh, you don't have something for upkeep yet. Go ahead and add some, or search existing ones :)</p>
+            <br />
+            <br />
+            <AppKeep.Web.Pages.Search.SearchPage></AppKeep.Web.Pages.Search.SearchPage>
+
+
+        </div>
+    </div>
+}
+
+
+@code {
+    private List<UserMachine> myMachines { get; set; }
+
+    private int userId = 0;
+
+    private int numRows = 5;
+    private int skipMachines = 0;
+
+    public MyMachinesPage()
+    {
+
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        base.OnParametersSet();
+
+        userId = GetUserId();
+
+        myMachines = await UserMachineService.GetUserMachines(userId);
+        Console.WriteLine(myMachines.Count);
+    }
+
+}
+

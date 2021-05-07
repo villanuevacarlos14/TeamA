@@ -1,0 +1,297 @@
+﻿@inject IUserMachineService userMachineService;
+@inject NavigationManager NavigationManager
+
+<div class="content">
+    <div class="row text-center" style="min-height: 80px;">
+        <div class="col-sm-12">
+            <h3>@machineItem.Machine.Name</h3>
+            <small>@machineItem.Machine.Make</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            @if (isEditMode)
+            {
+                <div style="margin: 0 auto;">
+                    <EditForm id="machineProfile" Model="@machineItem" OnValidSubmit="HandleValidSubmit">
+                        <DataAnnotationsValidator />
+
+                        <div class="form-group">
+                            <label>
+                                Name
+                                <InputText class="form-control uniform-field" @bind-Value="machineItem.Machine.Name" placeholder="Enter Machine Name" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Category
+                                <InputSelect class="form-control uniform-field" @bind-Value="machineItem.Machine.Category">
+                                    <option value="">Select a Category</option>
+                                    <option value="Vehicles">Vehicles</option>
+                                    <option value="Home">Home</option>
+                                    <option value="Applicances">Appliances</option>
+                                    <option value="Applicances">Pets</option>
+                                </InputSelect>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Make
+                                <InputText class="form-control uniform-field" @bind-Value="machineItem.Machine.Make" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Manufacturing Date
+                                <InputDate class="form-control uniform-field" @bind-Value="machineItem.ManufacturingDate" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Purchase Date
+                                <InputDate class="form-control uniform-field" @bind-Value="machineItem.PurchaseDate" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                On Warranty
+                                <InputCheckbox @bind-Value="machineItem.OnWarranty" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Warranty Info
+                                <InputText class="form-control uniform-field" @bind-Value="machineItem.WarrantyInfo" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Image File
+                                <InputText class="form-control uniform-field" @bind-Value="machineItem.ImgFile" />
+                            </label>
+                        </div>
+
+                        <ValidationSummary />
+
+                    </EditForm>
+                </div>
+            }
+            else
+            {
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>@machineItem.Machine.Name</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td>@machineItem.Machine.Category</td>
+                        </tr>
+                        <tr>
+                            <td>Make</td>
+                            <td>@machineItem.Machine.Make</td>
+                        </tr>
+                        <tr>
+                            <td>Manufacture Date</td>
+                            <td>@machineItem.ManufacturingDate</td>
+                        </tr>
+                        <tr>
+                            <td>Purchase Date</td>
+                            <td>@machineItem.PurchaseDate</td>
+                        </tr>
+                        <tr>
+                            <td>On Warranty?</td>
+                            <td>@(machineItem.OnWarranty ? "Yes" : "No")</td>
+                        </tr>
+                        @if (machineItem.OnWarranty)
+                        {
+                            <tr>
+                                <td>Warranty?</td>
+                                <td>@machineItem.WarrantyInfo</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    @if(!IsReadOnly)
+                    {
+                        <button class="btn btn-primary" @onclick="ToggleEditMode">Edit Details</button>
+                        <button class="btn btn-danger" @onclick="RemoveMachine">Remove Machine</button>
+                    }
+                   
+                </div>
+
+            }
+
+        </div>
+        <div class="col-sm-3">
+            <br />
+            <div class="card text-center" style="width: 18rem; cursor: pointer; margin: 0 auto;">
+                <div class="min-vh-400 ">
+                    <img class="card-img-top" src="images/@(machineItem.ImgFile ?? machineItem.Machine.ImgFile ?? "machine.png")" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+    @if (isEditMode)
+    {
+        <div class="row">
+            <div class="offset-4 col-4 text-center">
+                <br />
+                <br />
+                <button class="btn btn-primary" form="machineProfile" type="submit">@(machineItem.UserMachineId == 0 ? "Create" : "Update") Machine </button>
+                <button class="btn btn-danger" @onclick="CancelEdit">Cancel</button>
+            </div>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(submitResult))
+    {
+        <div class="row">
+            <div class="offset-4 col-4 text-center" style="color: forestgreen;">
+                <br />
+                <span class="oi oi-check" aria-hidden="true"></span>
+                <label>@submitResult</label>
+            </div>
+        </div>
+    }
+
+    @if (machineItem.UserMachineId != 0)
+    {
+        <br />
+        <br />
+        <div class="row">
+
+            @*<div class="col-12 text-center"><h4>Upkeep Profiles</h4></div>*@
+
+            @if(!IsReadOnly){
+                <div class="col-12">
+                    <TabControl OnAddNewPage="AddNewProfile">
+                        @foreach (var profile in machineItem.UpkeepProfiles)
+                        {
+                            <TabPage Text=@profile.ProfileName>
+                                <UpkeepProfileComponent UpkeepProfile="profile" OnProfileRemove="HandleProfileRemove"></UpkeepProfileComponent>
+                            </TabPage>
+                        }
+                    </TabControl>
+                </div>
+            }
+            else
+            {
+                <div class="col-12">
+                    <TabControl>
+                        @foreach (var profile in machineItem.UpkeepProfiles)
+                        {
+                            <TabPage Text=@profile.ProfileName>
+                                <UpkeepProfileComponent IsReadOnly="IsReadOnly" UpkeepProfile="profile" OnProfileRemove="HandleProfileRemove"></UpkeepProfileComponent>
+                            </TabPage>
+                        }
+                    </TabControl>
+                </div>
+            }
+            <br />
+            <br />
+            <br />
+        </div>
+    }
+
+</div>
+
+@code {
+    [Parameter]
+    public UserMachine MachineItem { get; set; }
+
+    [Parameter]
+    public int UserMachineId { get; set; }
+
+    [Parameter]
+    public bool IsEditMode { get; set; }
+
+    [Parameter]
+    public bool IsReadOnly { get;set; }
+
+    private UserMachine machineItem;
+    private string submitResult;
+    private int userMachineId { get; set; }
+    private bool isEditMode = false;
+
+    private void ToggleEditMode ()
+    {
+        isEditMode = true;
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        if (UserMachineId == 0)
+        {
+            machineItem = MachineItem;
+            isEditMode = IsEditMode;
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+
+        await base.OnParametersSetAsync();
+        if (UserMachineId != 0)
+        {
+            userMachineId = UserMachineId;
+            machineItem = await userMachineService.GetUserMachineByIdAsync(userMachineId);
+            isEditMode = IsEditMode;
+        }
+    }
+
+
+
+    private async Task HandleValidSubmit()
+    {
+        if (machineItem.UserMachineId == 0)
+        {
+            machineItem = await userMachineService.AddUserMachineAsync(machineItem);
+            submitResult = $"Machine { machineItem.Machine.Name }, { machineItem.UserMachineId } has been set up ready for upkeep.";
+            NavigationManager.NavigateTo($"/mymachine/{ machineItem.UserMachineId }");
+        }
+        else
+        {
+            machineItem = await userMachineService.UpdateUserMachineAsync(machineItem);
+            submitResult = $"Machine { machineItem.Machine.Name }, { machineItem.UserMachineId } has been updated ready for upkeep.";
+        }
+
+        isEditMode = false;
+    }
+
+    private void CancelEdit()
+    {
+        isEditMode = false;
+    }
+
+    private void AddNewProfile()
+    {
+        machineItem.UpkeepProfiles.Add(new UpkeepTemplate()
+        {
+            AuthorId = machineItem.UserId,
+            UserMachineId = machineItem.UserMachineId,
+            MachineId = machineItem.MachineId,
+            CreatedDate = DateTime.Now,
+            ProfileName = "(New Upkeep Profile)",
+            UpkeepTemplateDetails = new List<UpkeepTemplateDetail>()
+        });
+    }
+
+    private void HandleProfileRemove(UpkeepTemplate upkeepProfile)
+    {
+        machineItem.UpkeepProfiles.Remove(upkeepProfile);
+    }
+
+    private void RemoveMachine()
+    {
+        userMachineService.RemoveUserMachine(machineItem);
+        NavigationManager.NavigateTo("/mymachines");
+    }
+}

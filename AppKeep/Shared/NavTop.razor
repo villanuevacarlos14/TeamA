@@ -1,0 +1,49 @@
+@inherits PageBase
+
+<div class="top-row pl-4 navbar navbar-light">
+    <a class="navbar-brand" href="">AppKeep</a>
+    <button class="navbar-toggler"
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="top-row pl-4 navbar navbar-light ml-auto">
+    <ul class="nav nav-pills navbar-right">
+        @if (currentUserType == UserTypeEnum.Owner)
+        {
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="oi oi-magnifying-glass" aria-hidden="true"></span> Search
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="mymachines">
+                    <span class="oi oi-wrench" aria-hidden="true"></span> Machines
+                </NavLink>
+            </li>
+        }
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="myPlans">
+                <span class="oi oi-calendar" aria-hidden="true"></span> Plans
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+
+            <LoginControl />
+
+            @*<NavLink class="nav-link" href="logout">
+                <span class="oi oi-account-logout" aria-hidden="true"></span> Logout
+            </NavLink>*@
+        </li>
+    </ul>
+</div>
+
+@code{
+    private UserTypeEnum currentUserType;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        currentUserType = GetUserType();
+    }
+}

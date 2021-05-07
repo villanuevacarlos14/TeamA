@@ -1,0 +1,53 @@
+@using AppKeep.Domain
+
+<div class="container">
+    @if (!isCompact)
+    {
+        <div class="row m-3">
+            <div class="col-md-12 text-center">
+                <p class="h2">Set-up Machine</p>
+                <p>What machine needs AppKeep?</p>
+            </div>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-12">
+            <input class="form-control" id="search" @oninput="OnSearchChanged" @onkeydown="OnEnterPressed" value="@searchValue" placeholder="Search for existing upkeep profiles" />
+        </div>
+
+    </div>
+
+
+</div>
+
+@code{
+
+    private string searchValue { get; set; }
+    [Parameter] public EventCallback<string> SearchValueChanged { get; set;}
+    private bool isCompact = false;
+
+    [Parameter]
+    public bool IsCompact { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        isCompact = IsCompact;
+    }
+
+    private void OnSearchChanged(ChangeEventArgs e)
+    {
+        searchValue = e.Value.ToString();
+    }
+
+    private async Task OnEnterPressed(KeyboardEventArgs e)
+    {
+        if (e.Code == "Enter" || e.Code == "NumpadEnter")
+        {
+            await SearchValueChanged.InvokeAsync(searchValue);
+        }
+    }
+
+
+}   

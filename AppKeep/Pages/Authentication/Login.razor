@@ -1,0 +1,78 @@
+﻿@page "/authentication/login"
+@layout LoginLayout
+@inject IUserAuthenticationService UserAuthenticationService
+@inject IHttpContextAccessor httpContextAccessor
+@inject NavigationManager NavigationManager
+@using AppKeep.Web.Data
+@using AppKeep.Web.Components
+@using Microsoft.AspNetCore.Http
+@using System.Web;
+
+<section class="h-100">
+    <header class="container h-100">
+        <div class="d-flex align-items-center justify-content-center h-100">
+            <div class="d-flex flex-column bg-light p-4">
+                <h2 class="text align-self-center p-2">AppKeep</h2>
+                <p class="text align-self-center p-2">Welcome to AppKeep!  Please login to access the system.</p>
+                <EditForm id="machineProfile" Model="@LoginCredentials" OnSubmit="@SubmitLoginCredentials">
+                    <div class="form-group">
+                        <FluentValidationValidator ValidatorType=typeof(Validators.LoginCredentialsValidator) />
+                        <ValidationSummary />
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <InputText class="form-control uniform-field" @bind-Value="LoginCredentials.EmailAddress" disabled="@Disabled" placeholder="Email Address" />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <InputText class="form-control uniform-field" @bind-Value="LoginCredentials.Password" disabled="@Disabled" placeholder="Password" type="password" />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit" @onclick="DisableButtons" disabled="@Disabled">Login</button>
+                    </div>
+                </EditForm>
+                <p class="text align-self-center smaller p-1">Copyright © @CurrentYear() - AppKeep, LLC.</p>
+            </div>
+        </div>
+    </header>
+</section>
+
+@code {
+    public LoginCredentials LoginCredentials = new LoginCredentials();
+    protected bool Disabled { get; set; } = false;
+
+    protected void DisableButtons()
+    {
+        Disabled = true;
+    }
+
+    protected void SubmitLoginCredentials(EditContext editContext)
+    {
+        if (editContext.Validate())
+        {
+            // Validate method confirms credentials
+
+            var usernameEncoded = Encode(LoginCredentials.EmailAddress);
+            var passwordEncoded = Encode(LoginCredentials.Password);
+
+            NavigationManager.NavigateTo($"/authentication/loginprocess?username={usernameEncoded}&password={passwordEncoded}", forceLoad: true);
+        }
+        else
+        {
+            Disabled = false;
+        }
+    }
+
+    private string Encode(string param)
+    {
+        return HttpUtility.UrlEncode(param);
+    }
+
+    private string CurrentYear()
+    {
+        // Don't you know it's the Current Year!!!!
+        return DateTime.Now.Year.ToString();
+    }
+}

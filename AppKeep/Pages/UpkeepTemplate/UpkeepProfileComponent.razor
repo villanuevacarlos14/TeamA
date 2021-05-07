@@ -1,0 +1,132 @@
+﻿@inject IUpkeepTemplateService UpkeepProfileService;
+
+<div style="padding: 15px;">
+    <div class="row m-4">
+        <div class="col-6">
+            @if (editingName || upkeepProfile.UpkeepProfileTemplateId == 0)
+            {
+                <div>
+                    <EditForm Model="@upkeepProfile" style="display: inline-block"><InputText @bind-Value="@upkeepProfile.ProfileName" placeholder="Enter Profile Name"></InputText></EditForm>
+                    <div style="display: inline-block; color: forestgreen; cursor: pointer;" @onclick="HandleUpdateProfile"><span class="oi oi-check green"></span></div>
+                </div>
+            }
+            else
+            {
+                <h4 style="cursor: pointer; color: darkslateblue;" @onclick="showNameEdit">@upkeepProfile.ProfileName</h4>
+            }
+
+            @if (editingDesc)
+            {
+                <div>
+                    <EditForm Model="@upkeepProfile" style="display: inline-block"><InputText placeholder="Enter a description" @bind-Value="@upkeepProfile.Description"></InputText></EditForm>
+                    <div style="display: inline-block; color: forestgreen; cursor: pointer;" @onclick="HandleUpdateProfile"><span class="oi oi-check green"></span></div>
+                </div>
+            }
+            else
+            {
+                <small style="cursor: pointer; color: darkslateblue;" @onclick="showDescEdit">@(upkeepProfile.Description ?? "(Profile Description)")</small>
+            }
+
+        </div>
+        <div class="col-6 text-right">
+            @if(!IsReadOnly)
+            {
+                <button type="button" class="btn btn-danger" @onclick="RemoveProfile"><span class="oi oi-minus"></span>&nbsp;&nbsp;Remove Profile</button>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            @foreach (var workItem in upkeepProfile.UpkeepTemplateDetails)
+            {
+                <TemplateDetail IsReadOnly="IsReadOnly" TemplateDetailItem="workItem" OnCancelClick="@HandleOnCancelAdd" OnDeletedWorkItem="@HandleOnDeletedWorkItem"></TemplateDetail>
+                <br />
+            }
+            <br />
+
+        </div>
+    </div>
+    @if (upkeepProfile.UpkeepProfileTemplateId != 0)
+    {
+        <div class="row">
+            <div class="col-12 text-center">
+                 @if(!IsReadOnly)
+                {
+                    <button type="button" class="btn btn-success" @onclick="AddWorkItem"><span class="oi oi-plus"></span>&nbsp;&nbsp;Add Work Item</button>
+                }
+            </div>
+        </div>
+    }
+
+</div>
+
+
+@code {
+    [Parameter]
+    public UpkeepTemplate UpkeepProfile { get; set; }
+
+    [Parameter]
+    public EventCallback<UpkeepTemplate> OnProfileRemove { get; set; }
+
+    [Parameter]
+    public bool IsReadOnly { get; set; }
+
+    private UpkeepTemplate upkeepProfile;
+    private bool editingName = false;
+    private bool editingDesc = false;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        upkeepProfile = UpkeepProfile;
+    }
+
+    private void AddWorkItem()
+    {
+        upkeepProfile.UpkeepTemplateDetails.Add(new UpkeepTemplateDetail
+        {
+            UpkeepProfileTemplateId = upkeepProfile.UpkeepProfileTemplateId,
+            Status = WorkStatusEnum.Pending
+        });
+    }
+
+    private void HandleOnCancelAdd(UpkeepTemplateDetail templatedtail)
+    {
+        upkeepProfile.UpkeepTemplateDetails.Remove(templatedtail);
+    }
+
+    private void RemoveProfile()
+    {
+        UpkeepProfileService.RemoveUpkeepProfile(upkeepProfile);
+        OnProfileRemove.InvokeAsync(upkeepProfile);
+    }
+
+    private void showNameEdit()
+    {
+        if(IsReadOnly){
+            return;
+        }
+        editingName = true;
+    }
+
+    private void showDescEdit()
+    {
+        if(IsReadOnly){
+            return;
+        }
+        editingDesc = true;
+    }
+
+    private async Task HandleUpdateProfile()
+    {
+        upkeepProfile = await UpkeepProfileService.AddUpkeepTemplateAsync(upkeepProfile);
+        editingDesc = false;
+        editingName = false;
+    }
+
+    private void HandleOnDeletedWorkItem(UpkeepTemplateDetail templateDetail)
+    {
+        upkeepProfile.UpkeepTemplateDetails.Remove(templateDetail);
+    }
+}

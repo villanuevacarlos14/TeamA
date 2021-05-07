@@ -1,0 +1,31 @@
+﻿@if (workStatus == WorkStatusEnum.Pending)
+{
+    <button class="btn btn-info">Pending</button>
+}
+else if (workStatus == WorkStatusEnum.InProgress)
+{
+    <button class="btn btn-warning">In Progress</button>
+}
+else if (workStatus == WorkStatusEnum.Done)
+{
+    <button class="btn btn-success">Completed</button>
+}
+else if (workStatus == WorkStatusEnum.NeedsAction)
+{
+    <button class="btn btn-danger">Needs Action</button>
+}
+
+
+@code {
+    [Parameter]
+    public WorkStatusEnum WorkStatus { get; set; }
+
+    private WorkStatusEnum workStatus;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        workStatus = WorkStatus;
+    }
+}

@@ -1,0 +1,153 @@
+@using AppKeep.Domain
+@using AppKeep.Service
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
+@inject IUserMachineService userMachineService
+@inject IUpkeepTemplateService appkeepTemplateService
+@inject IUpkeepTemplateDetailService appkeepTemplateDetailService
+@inject IHttpContextAccessor httpContextAccessor
+
+    @if(!IsSetUpMode)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                @foreach (var items in Templates.GroupBy(x=>x.UserMachine.MachineId).ToList())
+                {
+                    <div class="list-group" style="cursor: pointer;" @onclick="@(()=>onClick(items.ToList()))">
+                        <span class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">@items.FirstOrDefault().UserMachine.Machine.Name</h5>
+                            <small>@items.FirstOrDefault().UserMachine.Machine.Make</small>
+                            </div>
+                            <p class="mb-1">@items.FirstOrDefault().UserMachine.Machine.Description</p>
+                            <small>@items.FirstOrDefault().UserMachine.Machine.Category - <span class="text-success">There are @(items.Count()) profile template/s</span></small>
+                        </span>
+                    </div> 
+                
+                }
+            </div>
+        </div>
+    }else{
+        <h3 class="pt-4">
+            Choose profile for : @selectedProfiles.FirstOrDefault().UserMachine.Machine.Name
+        </h3>
+
+        <select class="btn btn-secondary dropdown-toggle" @onchange="onSelectProfileEvent">
+            @foreach (var item in selectedProfiles)
+            {
+                <option value="@item.UpkeepProfileTemplateId"> @(item.ProfileName) </option>
+            }
+        </select>
+        <button class="btn btn-success" @onclick="onSelectProfileTemplate" style="display: inline-block;"> Select this profile </button>
+        @if(profile.UpkeepProfileTemplateId !=0)
+        {
+            <UpkeepProfileComponent IsReadOnly="true" UpkeepProfile="@profile"></UpkeepProfileComponent>
+        }
+    }
+
+@code{
+    private bool IsSetUpMode = false;
+    private UpkeepTemplate profile = new UpkeepTemplate();
+    private List<UpkeepTemplate> selectedProfiles  = new List<UpkeepTemplate>();
+
+    [Parameter]
+    public IEnumerable<UpkeepTemplate> Templates { get;set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+
+    public void ResetSearchList(){
+        IsSetUpMode = false;
+    }
+    private void onSelectProfileEvent(ChangeEventArgs e){
+        var selectedId = Convert.ToInt32(e.Value);
+        profile = selectedProfiles.FirstOrDefault(x=>x.UpkeepProfileTemplateId == selectedId);
+    }
+
+    private async Task onSelectProfileTemplate(MouseEventArgs e){
+        var newUserMachine = await userMachineService.AddUserMachineAsync(new UserMachine(){
+            UserId = GetUserId(),
+            MachineId = profile.UserMachine.MachineId,
+            WarrantyInfo = profile.UserMachine.WarrantyInfo,
+            ManufacturingDate = profile.UserMachine.ManufacturingDate,
+            PurchaseDate = profile.UserMachine.PurchaseDate,
+            ImgFile = profile.UserMachine.ImgFile
+        });
+
+        var newProfileTemplate = await appkeepTemplateService.AddUpkeepTemplateAsync(new UpkeepTemplate(){
+            UserMachineId = newUserMachine.UserMachineId,
+            AuthorId = GetUserId(),
+            SourceProfileTemplateId = profile.UpkeepProfileTemplateId,
+            CreatedDate = profile.CreatedDate,
+            Lifespan = profile.Lifespan,
+            MachineId = profile.MachineId,
+            ProfileName = profile.ProfileName,
+            Description = profile.Description,
+            UpkeepTemplateDetails = profile.UpkeepTemplateDetails.Select(x=> new UpkeepTemplateDetail(){
+                 PartId = x.PartId,
+                   Part = x.Part,
+                   IsRecurring = x.IsRecurring,
+                   Description = x.Description,
+                   Interval = x.Interval,
+                   Period = x.Period,
+                   StartDate = x.StartDate,
+                   Status = x.Status,
+                   WorkedByUserId = x.WorkedByUserId,
+                    StartWorkDateTime = x.StartWorkDateTime,
+                    CompleteWorkDateTime = x.CompleteWorkDateTime,
+                    NeedActionDateTime = x.NeedActionDateTime,
+                    Assistant =x.Assistant
+            }).ToList()
+        });
+
+        /* profile.UpkeepTemplateDetails.ForEach(async x=>{
+              await appkeepTemplateDetailService.AddUpkeepTemplateDetailAsync(new UpkeepTemplateDetail(){
+                   UpkeepProfileTemplateId = newProfileTemplate.UpkeepProfileTemplateId,  
+                   PartId = x.PartId,
+                   Part = x.Part,
+                   IsRecurring = x.IsRecurring,
+                   Description = x.Description,
+                   Interval = x.Interval,
+                   Period = x.Period,
+                   StartDate = x.StartDate,
+                   Status = x.Status,
+                   WorkedByUserId = x.WorkedByUserId,
+                    StartWorkDateTime = x.StartWorkDateTime,
+                    CompleteWorkDateTime = x.CompleteWorkDateTime,
+                    NeedActionDateTime = x.NeedActionDateTime,
+                    Assistant =x.Assistant
+                });
+        }); */
+      
+
+      navigationManager.NavigateTo($"/mymachine/{newUserMachine.UserMachineId}");
+    }
+
+    private void onSelectProfile(int selectedId){
+        profile = selectedProfiles.FirstOrDefault(x=>x.UpkeepProfileTemplateId == selectedId);
+    }
+    private void onClick(List<UpkeepTemplate> templates){
+        IsSetUpMode = true;
+        selectedProfiles = templates;
+        onSelectProfile(selectedProfiles.FirstOrDefault().UpkeepProfileTemplateId);
+    }
+
+    private int GetUserId()
+    {
+        int userId = 0;
+
+        if (httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+        {
+            var claim = httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "UserId");
+
+            if (claim != null && Int32.TryParse(claim.Value, out int claimUserId))
+            {
+                userId = claimUserId;
+            }
+        }
+
+        return userId;
+    }
+}    

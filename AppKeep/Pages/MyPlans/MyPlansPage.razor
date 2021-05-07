@@ -1,0 +1,127 @@
+﻿@page "/myPlans"
+@inject IUpkeepTemplateDetailService templateDetailService
+@inherits PageBase
+
+<h3>My Plans</h3>
+
+@if (myPlans.Any())
+{
+    <div class="float-right">
+        <EditForm Model="@myPlanFilters" OnValidSubmit="@FiltersChanged">
+            <div class="form-group list-group-horizontal d-inline-block">
+                <label>From</label>
+                <InputDate class="form-control" @bind-Value="myPlanFilters.StartDate"></InputDate>
+            </div>
+            <div class="form-group list-group-horizontal d-inline-block">
+                <label>To</label>
+                <InputDate class="form-control" @bind-Value="myPlanFilters.EndDate"></InputDate>
+            </div>
+            <div class="d-inline-block">
+                <button type="submit" class="btn btn-primary"><span class="oi oi-magnifying-glass"></span> Search</button>
+            </div>
+        </EditForm>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Work Description</th>
+                <th scope="col">Upkeep Profile</th>
+                <th scope="col">Category</th>
+                <th scope="col">Machine</th>
+                <th scope="col">Is Recurring?</th>
+                @if (userType == UserTypeEnum.Assistant)
+                {
+                    <th scope="col">Owner</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plan in myPlans)
+            {
+                <tr style="cursor: pointer;" @onclick="@(() => ToggleWorkView(plan))">
+                    <td>@plan.ScheduleDate.ToString("MM/dd/yyyy H:mm tt")</td>
+                    <td>
+                        <div class="d-inline-block" style="width: 122px;"><WorkItemStatus WorkStatus="@plan.Status"></WorkItemStatus></div>
+                        <div class="d-inline-block">@plan.WorkDescription</div>
+                    </td>
+                    <td><div>@plan.ProfileName</div><small>@plan.Description</small></td>
+                    <td>@plan.Category </td>
+                    <td>@plan.Machine </td>
+                    @if (@plan.IsRecurring)
+                    {
+                        <td>Yes</td>
+                    }
+                    else
+                    {
+                        <td>No</td>
+                    }
+                    @if (userType == UserTypeEnum.Assistant)
+                    {
+                        <td>@plan.OwnerName</td>
+                    }
+                </tr>
+                @if (plan.ShowDetail)
+                {
+                    <tr>
+                        <td colspan="8"><AppKeep.Web.Pages.UpkeepTemplate.TemplateDetail TemplateDetailItem="@plan.TemplateWorkDetail" WorkItem="@plan"></AppKeep.Web.Pages.UpkeepTemplate.TemplateDetail></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-12 text-center">
+            <p>Hmm.. You have no machines for upkeep yet. Add one or search existing machine upkeep profiles :)</p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+}
+
+@code {
+
+    private MyPlanFilters myPlanFilters;
+    private UserTypeEnum userType;
+
+    private List<AppKeep.Domain.MyPlanItem> myPlans = new List<AppKeep.Domain.MyPlanItem>();
+    protected override async Task OnParametersSetAsync()
+    {
+        base.OnParametersSet();
+
+        myPlanFilters = new MyPlanFilters
+        {
+            UserId = GetUserId(),
+            UserType = GetUserType(),
+            StartDate = DateTime.Now,
+            EndDate = DateTime.Now
+        };
+
+        myPlans = await templateDetailService.GetUpkeepTemplateDetailByIdForPlan(myPlanFilters);
+        userType = GetUserType();
+    }
+
+    private async Task FiltersChanged()
+    {
+        myPlans = await templateDetailService.GetUpkeepTemplateDetailByIdForPlan(myPlanFilters);
+    }
+
+    private void ToggleWorkView(MyPlanItem plan)
+    {
+        foreach (var p in myPlans)
+        {
+            p.ShowDetail = false;
+        }
+
+        plan.ShowDetail = !plan.ShowDetail;
+    }
+}

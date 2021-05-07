@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Service/AppKeep.Service.csproj": {}
+  },
+  "projects": {
+    "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj",
+        "projectName": "AppKeep.Data",
+        "projectPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj",
+        "packagesPath": "/Users/carlosvillanuevaiii/.nuget/packages/",
+        "outputPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/carlosvillanuevaiii/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/AppKeep.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/AppKeep.Domain.csproj",
+        "projectName": "AppKeep.Domain",
+        "projectPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/AppKeep.Domain.csproj",
+        "packagesPath": "/Users/carlosvillanuevaiii/.nuget/packages/",
+        "outputPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/carlosvillanuevaiii/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj": {
+                "projectPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Service/AppKeep.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Service/AppKeep.Service.csproj",
+        "projectName": "AppKeep.Service",
+        "projectPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Service/AppKeep.Service.csproj",
+        "packagesPath": "/Users/carlosvillanuevaiii/.nuget/packages/",
+        "outputPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Service/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/carlosvillanuevaiii/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj": {
+                "projectPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Data/AppKeep.Data.csproj"
+              },
+              "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/AppKeep.Domain.csproj": {
+                "projectPath": "/Users/carlosvillanuevaiii/Projects/TeamA/AppKeep.Domain/AppKeep.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
